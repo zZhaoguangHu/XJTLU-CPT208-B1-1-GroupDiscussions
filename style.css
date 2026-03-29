@@ -55,3 +55,110 @@ section {
   object-fit: cover;
   border-radius: 50%;
 }
+
+/* ===== layout improvement ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1f4f8f;
+}
+
+h3 {
+  margin-top: 0;
+  color: #1f4f8f;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+/* team section in 2 columns */
+#team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#team h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+#team .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#team .card p,
+#team .card h3 {
+  text-align: center;
+  width: 100%;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  #team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #team {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* other card groups keep clean spacing */
+#brainstorming .card,
+#journey .card,
+#prototype .card {
+  margin: 18px 0;
+}
+
+/* make cards look a little cleaner */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* better paragraph spacing inside cards */
+.card p,
+.card ul {
+  margin-bottom: 10px;
+}
+
+/* progress list cleaner */
+#progress ul {
+  padding-left: 20px;
+}
+
+/* responsive layout */
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  #team {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
