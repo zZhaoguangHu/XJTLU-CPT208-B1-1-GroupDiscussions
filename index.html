@@ -212,45 +212,189 @@
       </div>
     </section>
 
-    <section id="journey">
-      <h2>User Journey Map</h2>
-    </section>
+    <div class="card">
+      <h3>User Journey Map</h3>
+      <p><strong>Scenario:</strong> Participating in an in-class XJTLU group discussion for coursework</p>
+      <p><strong>Goal:</strong> To understand the task clearly, participate comfortably, stay focused, and complete the group task successfully.</p>
+    </div>
 
-    <section id="prototype">
-      <h2>Early Prototype Ideas</h2>
-      <div class="card">
-        <h3>Idea 1 - Discussion Prompt Support Tool</h3>
-        <p>
-          A mobile or web-based tool that provides students with prompts to help them start,
-          continue, and deepen group discussions.
-        </p>
-      </div>
+    <div class="journey-table-wrapper">
+      <table class="journey-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Actions</th>
+            <th>Thoughts</th>
+            <th>Emotions</th>
+            <th>Pain Points</th>
+            <th>Opportunities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Before the discussion</strong></td>
+            <td>
+              The student reads the task, listens to the teacher’s instructions, and joins a discussion group.
+            </td>
+            <td>
+              “Do I understand the task clearly?”<br>
+              “Will I be able to contribute?”
+            </td>
+            <td>Uncertain, slightly nervous</td>
+            <td>
+              The discussion goal may not be clear enough at the start. Some students may already feel pressure before speaking.
+            </td>
+            <td>
+              Provide a clearer task overview, simple objectives, and preparation support before the discussion begins.
+            </td>
+          </tr>
 
-      <div class="card">
-        <h3>Idea 2 - Participation Balance Assistant</h3>
-        <p>
-          A lightweight interactive system that helps visualise speaking balance in a group and
-          encourages more equal participation.
-        </p>
-      </div>
+          <tr>
+            <td><strong>Starting the discussion</strong></td>
+            <td>
+              The student looks at teammates, waits for someone to speak first, and listens to the opening conversation.
+            </td>
+            <td>
+              “Should I speak now, or wait?”<br>
+              “What if my idea is not good enough?”
+            </td>
+            <td>Awkward, hesitant, pressured</td>
+            <td>
+            Quiet or less confident students may struggle to join the conversation naturally.
+          </td>
+          <td>
+            Add ice-breakers, turn-taking support, or speaking prompts to reduce awkwardness at the beginning.
+          </td>
+        </tr>
 
-      <div class="card">
-        <h3>Idea 3 - Teacher Facilitation Dashboard</h3>
-        <p>
-          A simple tool that allows teachers to monitor group progress, identify quieter groups,
-          and provide timely support during discussions.
-        </p>
-      </div>
-    </section>
+        <tr>
+          <td><strong>During the discussion</strong></td>
+          <td>
+            The student listens, responds, shares ideas, and tries to follow the group’s progress.
+          </td>
+          <td>
+            “What is the main point now?”<br>
+            “I think I missed something.”
+          </td>
+          <td>Engaged but also stressed or confused</td>
+          <td>
+            Fast discussion, interruptions, and distractions make it difficult for some students to stay focused and understand the key points. Unequal participation may also appear.
+          </td>
+          <td>
+            Support real-time key-point tracking, structured discussion flow, and a cleaner, less distracting interaction design.
+          </td>
+        </tr>
 
-    <section id="progress">
-      <h2>Progress Log</h2>
+        <tr>
+          <td><strong>Finishing the discussion</strong></td>
+          <td>
+            The student helps summarise ideas or listens while others organise the final answer.
+          </td>
+          <td>
+            “Have we answered the task properly?”<br>
+            “Did I contribute enough?”
+          </td>
+          <td>Uncertain, reflective</td>
+            <td>
+              Some students may not fully understand the final result or may feel their contribution was limited.
+            </td>
+            <td>
+              Provide a shared summary, visible group decisions, and clearer task completion structure.
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>After the discussion</strong></td>
+            <td>
+             The student reflects on the teamwork experience and the final output.
+            </td>
+            <td>
+              “What did we actually conclude?”<br>
+              “How could I do better next time?”
+            </td>
+            <td>Reflective, sometimes disappointed</td>
+            <td>
+              There is often little support for review, feedback, or post-discussion reflection.
+            </td>
+           <td>
+             Add review notes, discussion summaries, and reflective feedback to help students improve over time.
+            </td>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+    <h3>Journey Stages</h3>
+    <ul>
+      <li><strong>Before the discussion:</strong> The student reads the task and listens to instructions, but may already feel uncertain about the discussion goal.</li>
+      <li><strong>Starting the discussion:</strong> The student waits for others to speak first and may hesitate to join the conversation.</li>
+      <li><strong>During the discussion:</strong> The student tries to listen, respond, and contribute, but may struggle with focus, comprehension, or unequal participation.</li>
+      <li><strong>Finishing the discussion:</strong> The student helps organise the final answer or listens while others summarise.</li>
+      <li><strong>After the discussion:</strong> The student reflects on the teamwork experience and may want clearer review and feedback.</li>
+    </ul>
+    </div>
+
+    <div class="card">
+    <h3>Key Pain Points</h3>
+    <ul>
+      <li>Unclear task structure at the beginning</li>
+      <li>Low confidence when joining discussion</li>
+      <li>Difficulty staying focused and following key points</li>
+      <li>Unequal participation during teamwork</li>
+      <li>Lack of review and reflection support afterwards</li>
+    </ul>
+    </div>
+
+    <div class="card">
+      <h3>Design Opportunities</h3>
       <ul>
+      <li>Clearer task guidance</li>
+      <li>Low-pressure participation support</li>
+      <li>Real-time discussion summary</li>
+      <li>A distraction-free interface</li>
+      <li>Post-discussion reflection tools</li>
+     </ul>
+    </div>
+
+    <div class="card">
+      <section id="prototype">
+        <h2>Early Prototype Ideas</h2>
+        <div class="card">
+          <h3>Idea 1 - Discussion Prompt Support Tool</h3>
+          <p>
+            A mobile or web-based tool that provides students with prompts to help them start,
+            continue, and deepen group discussions.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Idea 2 - Participation Balance Assistant</h3>
+           <p>
+            A lightweight interactive system that helps visualise speaking balance in a group and
+            encourages more equal participation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Idea 3 - Teacher Facilitation Dashboard</h3>
+          <p>
+            A simple tool that allows teachers to monitor group progress, identify quieter groups,
+            and provide timely support during discussions.
+          </p>
+        </div>
+      </section>
+
+      <section id="progress">
+        <h2>Progress Log</h2>
+        <ul>
         <li>Week 1: Group formed and topic selected.</li>
         <li>Week 2: GitHub Page initialized.</li>
-        <li>Next: Build 2 personas and conduct user research.</li>
-      </ul>
-    </section>
+        <li>Wekk 3: Build 2 personas and conduct user research.</li>
+        <li>Wekk 4: Build 1 user journey map.</li>
+        </ul>
+      </section>
+    </div> 
   </main>
 </body>
 </html>
