@@ -15,19 +15,24 @@
   <nav>
     <a href="#about">About</a>
     <a href="#team">Team</a>
-    <a href="#brainstorming">Brainstorming</a>
+    <a href="#research">Research</a>
+    <a href="#ideation">Ideation</a>
     <a href="#personas">Personas</a>
-    <a href="#journey">Journey Map</a>
-    <a href="#prototype">Prototype Ideas</a>
+    <a href="#journey">Journey</a>
+    <a href="#alternatives">Alternatives</a>
+    <a href="#final-design">Final Design</a>
+    <a href="#prototype">Prototype</a>
+    <a href="#evaluation">Evaluation</a>
     <a href="#progress">Progress</a>
   </nav>
+
 
   <main>
     <section id="about">
       <h2>About the Project</h2>
       <p>
         This project explores playful and human-centric ways to support group discussions
-        at XJTLU. Our target users include XJTLU students, language teachers, and academic teachers.
+        at XJTLU. Our target users include XJTLU students.
         The system is intended for mobile and PC use in onsite discussion contexts.
       </p>
       <p>
@@ -35,6 +40,13 @@
         confidence, communication, and collaboration. However, current discussion activities may
         still involve problems such as unequal participation, unclear structure, awkward silences,
         and limited support for teachers to monitor group progress.
+      </p>
+      <p>
+        Based on our early research and ideation, we identified several key issues in
+        XJTLU group discussions: some students feel nervous when speaking at the
+        beginning, some are easily distracted, some struggle to follow the key content,
+        participation is often unbalanced, and there is limited support for review and
+        reflection after the discussion.
       </p>
       <p>
         This project mainly involves <strong>XJTLU students, language teachers,
@@ -71,8 +83,66 @@
       </div>
     </section>
 
-    <section id="brainstorming">
-      <h2>Initial Brainstorming</h2>
+    <section id="research">
+      <h2>Research & Gap Analysis</h2>
+      <p>
+        To understand the discussion challenges more clearly, we reviewed both academic
+        papers and existing collaboration products. This helped us identify what current
+        solutions do well and what they still fail to support in classroom group discussion.
+      </p>
+
+      <div class="card">
+        <h3>Academic Research</h3>
+        <ul>
+          <li><strong>Cooperative Learning in Higher Education</strong> – highlights the value of structured roles and accountability in group work.</li>
+          <li><strong>Discussion as a Way of Teaching</strong> – emphasizes democratic participation and psychological safety in discussion.</li>
+          <li><strong>The Power of Peer Discussion</strong> – shows how peer explanation supports learning and conceptual understanding.</li>
+          <li><strong>Active Learning in Science & Engineering</strong> – provides evidence that active participation improves student performance.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Commercial Product Analysis</h3>
+        <ul>
+          <li><strong>Slack</strong> – strong for communication history, but lacks pedagogical scaffolding.</li>
+          <li><strong>Miro</strong> – strong for visual collaboration, but can become cluttered in discussion-heavy tasks.</li>
+          <li><strong>Padlet</strong> – easy to use, but limited for deeper structured discussion.</li>
+          <li><strong>Gather.town</strong> – engaging and playful, but weak in persistent discussion documentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ideation">
+      <h2>Brainstorming & Ideation</h2>
+      <p>
+        We first identified the main pain points in student group discussions, and then
+        explored a wide range of early concepts through brainstorming and Crazy Eights.
+      </p>
+
+      <div class="card">
+        <h3>Key Problems Identified</h3>
+        <ul>
+          <li>Some students feel nervous and hesitate to speak at the beginning.</li>
+          <li>Students are easily distracted during discussion.</li>
+          <li>Students struggle to follow key discussion content.</li>
+          <li>Participation is often unbalanced.</li>
+          <li>There is little support for review and reflection after discussion.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Crazy Eights Concepts</h3>
+        <ul>
+          <li>Mobile Quick-Prompt</li>
+          <li>Role Roulette</li>
+          <li>Sentiment Heatmap</li>
+          <li>AI Scribe</li>
+          <li>Peer Feedback Portal</li>
+          <li>Visual Scaffolding</li>
+          <li>Equality Tracker</li>
+          <li>AR Overlay</li>
+        </ul>
+      </div>
     </section>
 
     <section id="personas">
@@ -234,188 +304,278 @@
       </div>
     </section>
 
-    <div class="card">
-      <h3>User Journey Map</h3>
-      <p><strong>Scenario:</strong> Participating in an in-class XJTLU group discussion for coursework</p>
-      <p><strong>Goal:</strong> To understand the task clearly, participate comfortably, stay focused, and complete the group task successfully.</p>
-    </div>
+    <section id="journey">
+      <h2>User Journey Map</h2>
+      <div class="card">
+        <p><strong>Scenario:</strong> Participating in an in-class XJTLU group discussion for coursework</p>
+        <p><strong>Goal:</strong> To understand the task clearly, participate comfortably, stay focused, and complete the group task successfully.</p>
+        <p>
+          The journey map helped us identify the most critical emotional low points,
+          especially at the start of the discussion, during moments of distraction,
+          and after the session when reflection support is missing.
+        </p>
+      </div>
 
-    <div class="journey-table-wrapper">
-      <table class="journey-table">
-        <thead>
-          <tr>
-            <th>Stage</th>
-            <th>Actions</th>
-            <th>Thoughts</th>
-            <th>Emotions</th>
-            <th>Pain Points</th>
-            <th>Opportunities</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Before the discussion</strong></td>
-            <td>
-              The student reads the task, listens to the teacher’s instructions, and joins a discussion group.
-            </td>
-            <td>
-              “Do I understand the task clearly?”<br>
-              “Will I be able to contribute?”
-            </td>
-            <td>Uncertain, slightly nervous</td>
-            <td>
-              The discussion goal may not be clear enough at the start. Some students may already feel pressure before speaking.
-            </td>
-            <td>
-              Provide a clearer task overview, simple objectives, and preparation support before the discussion begins.
-            </td>
-          </tr>
+      <div class="journey-table-wrapper">
+        <table class="journey-table">
+          <thead>
+            <tr>
+              <th>Stage</th>
+              <th>Actions</th>
+              <th>Thoughts</th>
+              <th>Emotions</th>
+              <th>Pain Points</th>
+              <th>Opportunities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Before the discussion</strong></td>
+              <td>
+                The student reads the task, listens to the teacher’s instructions, and joins a discussion group.
+              </td>
+              <td>
+                “Do I understand the task clearly?”<br>
+                “Will I be able to contribute?”
+              </td>
+              <td>Uncertain, slightly nervous</td>
+              <td>
+                The discussion goal may not be clear enough at the start. Some students may already feel pressure before speaking.
+              </td>
+              <td>
+                Provide a clearer task overview, simple objectives, and preparation support before the discussion begins.
+              </td>
+            </tr>
 
-          <tr>
-            <td><strong>Starting the discussion</strong></td>
-            <td>
-              The student looks at teammates, waits for someone to speak first, and listens to the opening conversation.
+            <tr>
+              <td><strong>Starting the discussion</strong></td>
+              <td>
+                The student looks at teammates, waits for someone to speak first, and listens to the opening conversation.
+              </td>
+              <td>
+                “Should I speak now, or wait?”<br>
+                “What if my idea is not good enough?”
+              </td>
+              <td>Awkward, hesitant, pressured</td>
+              <td>
+              Quiet or less confident students may struggle to join the conversation naturally.
             </td>
             <td>
-              “Should I speak now, or wait?”<br>
-              “What if my idea is not good enough?”
-            </td>
-            <td>Awkward, hesitant, pressured</td>
-            <td>
-            Quiet or less confident students may struggle to join the conversation naturally.
-          </td>
-          <td>
-            Add ice-breakers, turn-taking support, or speaking prompts to reduce awkwardness at the beginning.
-          </td>
-        </tr>
-
-        <tr>
-          <td><strong>During the discussion</strong></td>
-          <td>
-            The student listens, responds, shares ideas, and tries to follow the group’s progress.
-          </td>
-          <td>
-            “What is the main point now?”<br>
-            “I think I missed something.”
-          </td>
-          <td>Engaged but also stressed or confused</td>
-          <td>
-            Fast discussion, interruptions, and distractions make it difficult for some students to stay focused and understand the key points. Unequal participation may also appear.
-          </td>
-          <td>
-            Support real-time key-point tracking, structured discussion flow, and a cleaner, less distracting interaction design.
-          </td>
-        </tr>
-
-        <tr>
-          <td><strong>Finishing the discussion</strong></td>
-          <td>
-            The student helps summarise ideas or listens while others organise the final answer.
-          </td>
-          <td>
-            “Have we answered the task properly?”<br>
-            “Did I contribute enough?”
-          </td>
-          <td>Uncertain, reflective</td>
-            <td>
-              Some students may not fully understand the final result or may feel their contribution was limited.
-            </td>
-            <td>
-              Provide a shared summary, visible group decisions, and clearer task completion structure.
+              Add ice-breakers, turn-taking support, or speaking prompts to reduce awkwardness at the beginning.
             </td>
           </tr>
 
           <tr>
-            <td><strong>After the discussion</strong></td>
+            <td><strong>During the discussion</strong></td>
             <td>
-             The student reflects on the teamwork experience and the final output.
+              The student listens, responds, shares ideas, and tries to follow the group’s progress.
             </td>
             <td>
-              “What did we actually conclude?”<br>
-              “How could I do better next time?”
+              “What is the main point now?”<br>
+              “I think I missed something.”
             </td>
-            <td>Reflective, sometimes disappointed</td>
+            <td>Engaged but also stressed or confused</td>
             <td>
-              There is often little support for review, feedback, or post-discussion reflection.
+              Fast discussion, interruptions, and distractions make it difficult for some students to stay focused and understand the key points. Unequal participation may also appear.
             </td>
-           <td>
-             Add review notes, discussion summaries, and reflective feedback to help students improve over time.
+            <td>
+              Support real-time key-point tracking, structured discussion flow, and a cleaner, less distracting interaction design.
             </td>
-         </tr>
-        </tbody>
-      </table>
-    </div>
+          </tr>
 
-    <div class="card">
-    <h3>Journey Stages</h3>
-    <ul>
-      <li><strong>Before the discussion:</strong> The student reads the task and listens to instructions, but may already feel uncertain about the discussion goal.</li>
-      <li><strong>Starting the discussion:</strong> The student waits for others to speak first and may hesitate to join the conversation.</li>
-      <li><strong>During the discussion:</strong> The student tries to listen, respond, and contribute, but may struggle with focus, comprehension, or unequal participation.</li>
-      <li><strong>Finishing the discussion:</strong> The student helps organise the final answer or listens while others summarise.</li>
-      <li><strong>After the discussion:</strong> The student reflects on the teamwork experience and may want clearer review and feedback.</li>
-    </ul>
-    </div>
+          <tr>
+            <td><strong>Finishing the discussion</strong></td>
+            <td>
+              The student helps summarise ideas or listens while others organise the final answer.
+            </td>
+            <td>
+              “Have we answered the task properly?”<br>
+              “Did I contribute enough?”
+            </td>
+            <td>Uncertain, reflective</td>
+              <td>
+                Some students may not fully understand the final result or may feel their contribution was limited.
+              </td>
+              <td>
+                Provide a shared summary, visible group decisions, and clearer task completion structure.
+              </td>
+            </tr>
 
-    <div class="card">
-    <h3>Key Pain Points</h3>
-    <ul>
-      <li>Unclear task structure at the beginning</li>
-      <li>Low confidence when joining discussion</li>
-      <li>Difficulty staying focused and following key points</li>
-      <li>Unequal participation during teamwork</li>
-      <li>Lack of review and reflection support afterwards</li>
-    </ul>
-    </div>
+            <tr>
+              <td><strong>After the discussion</strong></td>
+              <td>
+              The student reflects on the teamwork experience and the final output.
+              </td>
+              <td>
+                “What did we actually conclude?”<br>
+                “How could I do better next time?”
+              </td>
+              <td>Reflective, sometimes disappointed</td>
+              <td>
+                There is often little support for review, feedback, or post-discussion reflection.
+              </td>
+            <td>
+              Add review notes, discussion summaries, and reflective feedback to help students improve over time.
+              </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <div class="card">
-      <h3>Design Opportunities</h3>
-      <ul>
-      <li>Clearer task guidance</li>
-      <li>Low-pressure participation support</li>
-      <li>Real-time discussion summary</li>
-      <li>A distraction-free interface</li>
-      <li>Post-discussion reflection tools</li>
-     </ul>
-    </div>
-
-    <div class="card">
-      <section id="prototype">
-        <h2>Early Prototype Ideas</h2>
-        <div class="card">
-          <h3>Idea 1 - Discussion Prompt Support Tool</h3>
-          <p>
-            A mobile or web-based tool that provides students with prompts to help them start,
-            continue, and deepen group discussions.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Idea 2 - Participation Balance Assistant</h3>
-           <p>
-            A lightweight interactive system that helps visualise speaking balance in a group and
-            encourages more equal participation.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Idea 3 - Teacher Facilitation Dashboard</h3>
-          <p>
-            A simple tool that allows teachers to monitor group progress, identify quieter groups,
-            and provide timely support during discussions.
-          </p>
-        </div>
-      </section>
-
-      <section id="progress">
-        <h2>Progress Log</h2>
+      <div class="card">
+      <h3>Journey Stages</h3>
         <ul>
-        <li>Week 1: Group formed and topic selected.</li>
-        <li>Week 2: GitHub Page initialized.</li>
-        <li>Wekk 3: Build 2 personas and conduct user research.</li>
-        <li>Wekk 4: Build 1 user journey map.</li>
+          <li><strong>Before the discussion:</strong> The student reads the task and listens to instructions, but may already feel uncertain about the discussion goal.</li>
+          <li><strong>Starting the discussion:</strong> The student waits for others to speak first and may hesitate to join the conversation.</li>
+          <li><strong>During the discussion:</strong> The student tries to listen, respond, and contribute, but may struggle with focus, comprehension, or unequal participation.</li>
+          <li><strong>Finishing the discussion:</strong> The student helps organise the final answer or listens while others summarise.</li>
+          <li><strong>After the discussion:</strong> The student reflects on the teamwork experience and may want clearer review and feedback.</li>
         </ul>
-      </section>
+      </div>
+
+      <div class="card">
+        <h3>Key Pain Points</h3>
+        <ul>
+          <li>Unclear task structure at the beginning</li>
+          <li>Low confidence when joining discussion</li>
+          <li>Difficulty staying focused and following key points</li>
+          <li>Unequal participation during teamwork</li>
+          <li>Lack of review and reflection support afterwards</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Design Opportunities</h3>
+        <ul>
+        <li>Clearer task guidance</li>
+        <li>Low-pressure participation support</li>
+        <li>Real-time discussion summary</li>
+        <li>A distraction-free interface</li>
+        <li>Post-discussion reflection tools</li>
+      </ul>
+      </div>
+    </section>
+
+    <section id="alternatives">
+      <h2>Design Alternatives</h2>
+      <p>
+        Before deciding on our final solution, we compared several broader design
+        directions for supporting group discussion.
+      </p>
+
+      <div class="card">
+        <h3>AI-First Automated Assistant</h3>
+        <p>A system that uses AI to lead and moderate the discussion automatically.</p>
+        <p><strong>Pros:</strong> high efficiency, consistent moderation, low effort for students.</p>
+        <p><strong>Cons:</strong> reduces critical thinking, feels robotic, may weaken natural discussion.</p>
+      </div>
+
+      <div class="card">
+        <h3>Gamified Engagement Platform</h3>
+        <p>A system based on points, badges, and incentives to increase participation.</p>
+        <p><strong>Pros:</strong> engaging, motivating, fun and visible.</p>
+        <p><strong>Cons:</strong> may lead to superficial participation and over-competition.</p>
+      </div>
+
+      <div class="card">
+        <h3>Human-Centered Scaffolding Tool (Chosen)</h3>
+        <p>A system that supports students with prompts, lightweight structure, and reflection tools while keeping them in control of the discussion.</p>
+        <p><strong>Pros:</strong> encourages critical thinking, democratic participation, and adaptability.</p>
+        <p><strong>Cons:</strong> requires more effort from students and depends on group motivation.</p>
+      </div>
+    </section>
+
+    <section id="final-design">
+      <h2>Final Design Concept</h2>
+      <p>
+        After comparing different directions, we refined our final concept into three
+        main interaction mechanisms.
+      </p>
+
+      <div class="card">
+        <h3>Prompt Words</h3>
+        <p>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Real time Agree Against Feedback</h3>
+        <p>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI Summary and Decision Tree Playback</h3>
+        <p>
+        </p>
+      </div>
+    </section>
+
+    <section id="prototype-evolution">
+      <h2>Prototype Evolution</h2>
+
+      <div class="card">
+        <h3>Low-Fidelity Exploration</h3>
+        <p>
+          We started with quick sketches and early concepts such as prompts, role tools,
+          heatmaps, and AI-supported discussion aids.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mid-Fidelity Refinement</h3>
+        <p>
+          We then narrowed these ideas into more focused interaction concepts that better
+          matched the identified pain points in real classroom discussions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>High-Fidelity Prototype</h3>
+        <p>
+          Our current prototype focuses on three core interactions: low-threshold initiation,
+          dynamic discussion guidance, and reflective playback after discussion.
+        </p>
+      </div>
+    </section>
+
+    <section id="evaluation">
+      <h2>Early Evaluation</h2>
+      <p>
+        We carried out early feedback collection on the current concept to understand
+        how well it addresses speaking anxiety, focus, and reflection in group discussions.
+      </p>
+
+      <div class="card">
+        <h3>Initial Findings</h3>
+        <ul>
+          <li>The low-threshold initiation idea was seen as helpful for shy students.</li>
+          <li>The visual structure of the discussion was considered useful for re-focusing attention.</li>
+          <li>The reflective playback concept showed potential for supporting post-discussion review.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Next Steps</h3>
+        <p>
+          In the next stage, we plan to test the prototype further with more users and
+          refine the interaction details based on feedback.
+        </p>
+      </div>
+    </section>
+
+    <section id="progress">
+      <h2>Progress Log</h2>
+      <ul>
+        <li><strong>Week 1-2:</strong> Formed the group, confirmed the project topic, and initialized the GitHub portfolio.</li>
+        <li><strong>Week 3:</strong> Identified the main challenges in XJTLU group discussions.</li>
+        <li><strong>Week 4:</strong> Developed two personas and completed a user journey map.</li>
+        <li><strong>Week 5:</strong> Reviewed academic papers and existing collaboration products to identify research gaps.</li>
+        <li><strong>Week 6:</strong> Created Crazy Eights concepts and compared alternative design directions.</li>
+        <li><strong>Week 7:</strong> Refined the final concept into three key interaction mechanisms.</li>
+        <li><strong>Week 8:</strong> Produced the poster, refined the prototype, and summarized early evaluation findings.</li>
+      </ul>
+    </section>
     </div> 
   </main>
 </body>
