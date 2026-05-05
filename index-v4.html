@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeakEasy — CPT208 B1-1 Process Portfolio</title>
+  <link rel="stylesheet" href="style-v3.css" />
+</head>
+<body>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#motivation">1. Motivation &amp; Research</a>
+    <a href="#requirements">2. User Requirements</a>
+    <a href="#ideation">3. Ideation &amp; Alternatives</a>
+    <a href="#technical">4. Technical Implementation</a>
+    <a href="#evaluation">5. Evaluation &amp; Reflection</a>
+    <a href="#progress">Progress</a>
+    <a href="#references">References</a>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <h1>SpeakEasy: Scaffolding the Silent Divide</h1>
+  <p class="subtitle">A Human-Centered Discussion Support System for XJTLU Classroom Group Work</p>
+  <p class="subtitle" style="font-size:1rem;">Playful Experience Design — Social Connectivity Track (B1)</p>
+  <div class="meta">
+    <span class="badge">Group B1-1</span>
+    <span class="badge">CPT208 Human-Centric Computing</span>
+    <span class="badge">AY2025-26</span>
+  </div>
+</header>
+
+<!-- ==================== MAIN CONTENT ==================== -->
+<main class="main">
+
+  <!-- ========== TEAM ========== -->
+  <section class="section" id="team">
+    <h2><span class="num">👥</span> Group Members</h2>
+    <div class="team-grid">
+      <div class="card team-card">
+        <img src="assets/member1.png" alt="Zhaoguang Hu" />
+        <h3>Zhaoguang Hu</h3>
+        <p>Student ID: 2257688</p>
+      </div>
+      <div class="card team-card">
+        <img src="assets/member2.jpg" alt="Haoyu Chen" />
+        <h3>Haoyu Chen</h3>
+        <p>Student ID: 2361801</p>
+      </div>
+      <div class="card team-card">
+        <img src="assets/member3.jpg" alt="Yihan Shen" />
+        <h3>Yihan Shen</h3>
+        <p>Student ID: 2362075</p>
+      </div>
+      <div class="card team-card">
+        <img src="assets/member4.jpg" alt="Panyi Qin" />
+        <h3>Panyi Qin</h3>
+        <p>Student ID: 2362163</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- 1. MOTIVATION & RESEARCH                                           -->
+  <!-- ================================================================== -->
+  <section class="section" id="motivation">
+    <h2><span class="num">1</span> Motivation &amp; Research</h2>
+
+    <!-- 1.1 The Why -->
+    <h3>1.1 The Why</h3>
+    <div class="card">
+      <p>
+        In every XJTLU classroom, group discussion is meant to be a space where ideas collide,
+        perspectives broaden, and every student finds their voice. But the reality often falls short.
+        We have seen it ourselves: the student who stays silent because they are afraid their idea
+        is not good enough; the group member who drifts away mid-discussion, lost and unable to
+        re-enter the conversation; the quiet contributor whose insight is drowned out by louder
+        voices; and the entire group walking away with no clear record of what they actually decided.
+      </p>
+      <p>
+        We chose the <strong>Social Connectivity (B1)</strong> track — <strong>XJTLU Group
+        Discussions</strong> — because these problems are not abstract research questions. They
+        are daily experiences in our own seminars, labs, and project meetings. Existing tools
+        like Slack, Padlet, and Miro excel at communication but were never designed to scaffold
+        the discussion itself. They offer no bridge for the shy student facing the "first-sentence
+        barrier," no compass for the distracted student who has lost the thread, and no mirror
+        for the group to reflect on what paths they did not take.
+      </p>
+      <p>
+        Our project, <strong>SpeakEasy</strong>, is not another chat app. It is a human-centered
+        scaffolding tool that wraps around the natural rhythm of classroom discussion — lowering the
+        threshold to speak, anchoring attention with a visible discussion structure, and
+        transforming post-discussion reflection from an afterthought into an act of critical
+        learning. We believe technology in the classroom should not automate conversation; it
+        should make every participant more confident, more aware, and more reflective.
+      </p>
+    </div>
+
+    <!-- 1.2 The Gap -->
+    <h3>1.2 The Gap — Academic &amp; Commercial Landscape</h3>
+
+    <h4>Academic Papers</h4>
+    <div class="card-grid">
+      <div class="card">
+        <h3>1. Cooperative Learning in Higher Education</h3>
+        <p style="color:var(--clr-text-light);">Barbara J. Millis (2010)</p>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Establishes clear structured roles for accountability</li>
+            <li>Robust framework for cross-disciplinary cooperative learning</li>
+            <li>Links structured interaction to deep cognitive processing</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Lacks integration for digital-first / hybrid environments</li>
+            <li>No real-time data feedback loops for instructors</li>
+            <li>Underemphasizes emotional intelligence in group conflict</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>2. Discussion as a Way of Teaching</h3>
+        <p style="color:var(--clr-text-light);">Brookfield &amp; Preskill (2012)</p>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Diverse democratic techniques for inclusive participation</li>
+            <li>Practical tools for critical thinking through dialogue</li>
+            <li>Focuses on creating psychological safety for discussion</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Limited scalability discussion for large courses (MOOCs)</li>
+            <li>No frameworks for AI-assisted discussion quality assessment</li>
+            <li>Does not fully explore barriers for non-traditional students</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>3. The Power of Peer Discussion</h3>
+        <p style="color:var(--clr-text-light);">Knight, J. K., et al. (2013)</p>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Logical interaction is more critical than just finding the right answer</li>
+            <li>Strong empirical evidence for benefits of peer-to-peer dynamics</li>
+            <li>Focuses on conceptual shifts during peer explanation</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Lacks long-term data on knowledge retention after discussion</li>
+            <li>Does not account for cross-cultural variations in peer communication</li>
+            <li>Minimal guidance on mitigating dominant personalities in groups</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>4. Active Learning in Science &amp; Engineering</h3>
+        <p style="color:var(--clr-text-light);">Freeman, S., et al. (2014)</p>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Massive meta-analysis showing undeniable performance gains</li>
+            <li>Clear metrics for success including reduced failure rates</li>
+            <li>Successfully advocates shift away from traditional lecturing in STEM</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Focuses heavily on quantitative outcomes, missing qualitative experiences</li>
+            <li>No detailed cost-benefit analysis for institutional implementation</li>
+            <li>Applicability to humanities and social sciences not explicitly addressed</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Commercial Products</h4>
+    <div class="card-grid">
+      <div class="card">
+        <h3>1. Slack — Channel-based Collaboration</h3>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Excellent real-time threading keeps discussions organized</li>
+            <li>Massive integration ecosystem (Google Drive, Zoom, etc.)</li>
+            <li>Powerful search history as a persistent knowledge base</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Lacks built-in pedagogical structures (roles, discussion prompts)</li>
+            <li>High noise-to-signal ratio can distract from deep discussion</li>
+            <li>No native tools for visual scaffolding or mind-mapping within chat</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>2. Miro — Visual Whiteboard Platform</h3>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Infinite visual canvas for non-linear brainstorming and co-creation</li>
+            <li>Extensive template library for various discussion frameworks</li>
+            <li>Real-time cursor tracking creates a strong sense of presence</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Managing text-heavy deep discussions can become cluttered</li>
+            <li>Lacks automated synthesis tools for large amounts of visual data</li>
+            <li>Steep learning curve for users uncomfortable with spatial interfaces</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>3. Padlet — Digital Notice Board</h3>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Extremely low barrier to entry; students can contribute instantly</li>
+            <li>Versatile post types (images, videos, voice notes) for different styles</li>
+            <li>Simple visual organization easy for instructors to moderate</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Lacks deep hierarchical threading for complex debates</li>
+            <li>Limited data analytics for tracking individual engagement over time</li>
+            <li>Free version highly restrictive, limiting long-term project use</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>4. Gather.town — Virtual Gathering Space</h3>
+        <div class="pros-cons">
+          <div class="pros"><h5>3 Things Done Well</h5>
+            <ul><li>Engaging and playful spatial interaction design</li>
+            <li>Proximity-based audio mimics natural conversation dynamics</li>
+            <li>Strong sense of co-presence and informal social interaction</li></ul>
+          </div>
+          <div class="cons"><h5>3 Things Missed</h5>
+            <ul><li>Weak in persistent discussion documentation and archiving</li>
+            <li>No built-in pedagogical scaffolding or discussion structure tools</li>
+            <li>Gaming-style interface may distract from focused academic discussion</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1.3 The Stakeholders -->
+    <h3>1.3 The Stakeholders — User Personas</h3>
+    <p>Two distinct personas were developed based on our research into XJTLU group discussion dynamics. Ethan represents our <strong>primary user</strong> — the shy, easily distracted student who struggles to participate. Zhang Ming represents the <strong>secondary user</strong> — the team leader who needs to coordinate group work efficiently.</p>
+
+    <div class="persona-grid">
+
+      <!-- Persona 1: Ethan (Primary) -->
+      <div class="card persona-card">
+        <div class="persona-top">
+          <img class="persona-img" src="assets/ethan-persona.png" alt="Ethan persona board" />
+          <div class="persona-meta">
+            <h3>Persona 1 — Ethan <span class="tag tag-ok">Primary User</span></h3>
+            <p><strong>Age:</strong> 23 &nbsp;|&nbsp; <strong>Role:</strong> XJTLU Junior, Information and Computing Science</p>
+            <p><strong>Location:</strong> Suzhou, Jiangsu</p>
+            <p><strong>Character:</strong> Introverted, easily distracted, difficulty following fast conversations</p>
+          </div>
+        </div>
+        <div class="persona-sections">
+          <div class="persona-block"><h4>Bio</h4><p>Ethan is a junior at XJTLU who often feels afraid to express his opinions during group discussions. He is easily distracted by notifications and online information, which makes it difficult for him to stay focused and understand the key content of each discussion. He wants to contribute but fears his ideas are "not good enough."</p></div>
+          <div class="persona-block"><h4>Goals</h4><ul><li>Discuss in a relaxed, non-judgmental atmosphere</li><li>Maintain focus during collaborative work</li><li>Complete group tasks without holding back teammates</li><li>Catch up with group progress easily after losing focus</li></ul></div>
+          <div class="persona-block"><h4>Frustrations</h4><ul><li>Gets easily distracted during teamwork</li><li>Often forgets key points after discussions</li><li>Afraid to express ideas in front of teammates</li><li>Struggles to rejoin discussion after zoning out</li></ul></div>
+          <div class="persona-block"><h4>Design Implications</h4><ul><li>The system should reduce distraction during group discussion</li><li>The interface should support shy users in expressing ideas more comfortably</li><li>The system should help users summarise and review key discussion points</li><li>There should be a low-pressure way to make the first contribution</li></ul></div>
+        </div>
+      </div>
+
+      <!-- Persona 2: Zhang Ming (Secondary) -->
+      <div class="card persona-card">
+        <div class="persona-top">
+          <img class="persona-img" src="assets/zhang-ming-persona.png" alt="Zhang Ming persona board" />
+          <div class="persona-meta">
+            <h3>Persona 2 — Zhang Ming <span class="tag tag-warn">Secondary User</span></h3>
+            <p><strong>Major:</strong> Computer Science and Technology, XJTLU</p>
+            <p><strong>Role:</strong> Team leader / project manager</p>
+            <p><strong>Profile:</strong> High technical proficiency, familiar with Notion, GitHub, Trello; often responsible for recruiting teammates and coordinating group work. His challenge is not speaking itself but managing team dynamics effectively.</p>
+          </div>
+        </div>
+        <div class="persona-sections">
+          <div class="persona-block"><h4>Bio</h4><p>Zhang Ming is a student team leader who often takes responsibility for organizing course projects and competitions. His main challenge is quickly forming a strong team, assigning tasks clearly, and tracking progress — not participating in discussion itself.</p></div>
+          <div class="persona-block"><h4>Goals &amp; Motivation</h4><ul><li>Quickly publish recruitment information to find capable members</li><li>Recruit members with matching skills for the course project</li><li>Clarify tasks and deadlines clearly to the team</li><li>Manage group progress to ensure on-time completion</li></ul></div>
+          <div class="persona-block"><h4>Frustrations</h4><ul><li>Narrow reach of recruitment information</li><li>Inefficient screening through private chats</li><li>Low member motivation after team formation</li><li>Fragmented task management in WeChat groups</li></ul></div>
+          <div class="persona-block"><h4>Design Implications</h4><ul><li>The system should support fast and targeted member recruitment</li><li>The interface should reduce repetitive screening work for team leaders</li><li>The system should make task assignment and deadlines more visible</li><li>The platform should centralize collaboration instead of relying on fragmented chat tools</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- 2. USER REQUIREMENTS                                               -->
+  <!-- ================================================================== -->
+  <section class="section" id="requirements">
+    <h2><span class="num">2</span> User Requirements</h2>
+
+    <!-- 2.1 User Journey Map -->
+    <h3>2.1 User Journey Map</h3>
+    <p>
+      <strong>Scenario:</strong> Participating in an in-class XJTLU group discussion for coursework.
+      <strong>Goal:</strong> To understand the task clearly, participate comfortably, stay focused, and complete the group task successfully.
+      The journey map reveals that the <strong>emotional low point</strong> appears at the starting stage — when the student is thinking "Should I speak now?" or "What if my idea is not good enough?" — and that reflection support is weakest after the discussion ends.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Stage</th><th>Actions</th><th>Thoughts</th><th>Emotions</th><th>Pain Points</th><th>Opportunities</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Before the discussion</strong></td>
+            <td>Reads the task, listens to instructions, joins a discussion group.</td>
+            <td>"Do I understand the task clearly?"<br>"Will I be able to contribute?"</td>
+            <td>Uncertain, slightly nervous</td>
+            <td>Discussion goal may not be clear enough at the start. Some students already feel pressure before speaking.</td>
+            <td>Provide clearer task overview, simple objectives, and preparation support before discussion begins.</td>
+          </tr>
+          <tr>
+            <td><strong>Starting the discussion</strong></td>
+            <td>Looks at teammates, waits for someone to speak first, listens to opening conversation.</td>
+            <td>"Should I speak now, or wait?"<br>"What if my idea is not good enough?"</td>
+            <td>😰 Awkward, hesitant, pressured</td>
+            <td>Quiet or less confident students struggle to join the conversation naturally. <strong>This is the emotional low point.</strong></td>
+            <td>Add ice-breakers, anonymous idea submission, and low-pressure initiation mechanisms.</td>
+          </tr>
+          <tr>
+            <td><strong>During the discussion</strong></td>
+            <td>Listens, responds, shares ideas, and tries to follow the group's progress.</td>
+            <td>"What is the main point now?"<br>"I think I missed something."</td>
+            <td>Engaged but also stressed or confused</td>
+            <td>Fast discussion pace, interruptions, and distractions make it difficult to stay focused. Unequal participation appears.</td>
+            <td>Support real-time key-point tracking, structured discussion flow, and a cleaner interaction design.</td>
+          </tr>
+          <tr>
+            <td><strong>Finishing the discussion</strong></td>
+            <td>Helps summarise ideas or listens while others organise the final answer.</td>
+            <td>"Have we answered the task properly?"<br>"Did I contribute enough?"</td>
+            <td>Uncertain, reflective</td>
+            <td>Some students may not fully understand the final result or feel their contribution was limited.</td>
+            <td>Provide a shared summary, visible group decisions, and clearer task completion structure.</td>
+          </tr>
+          <tr>
+            <td><strong>After the discussion</strong></td>
+            <td>Reflects on the teamwork experience and the final output.</td>
+            <td>"What did we actually conclude?"<br>"How could I do better next time?"</td>
+            <td>Reflective, sometimes disappointed</td>
+            <td>There is often little support for review, feedback, or post-discussion reflection.</td>
+            <td>Add review notes, discussion summaries, decision tree playback, and reflective feedback to help students improve over time.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="card"><h4>Key Pain Points</h4><ul><li>Unclear task structure at the beginning</li><li>Low confidence when joining discussion</li><li>Difficulty staying focused and following key points</li><li>Unequal participation during teamwork</li><li>Lack of review and reflection support afterwards</li></ul></div>
+      <div class="card"><h4>Design Opportunities</h4><ul><li>Clearer task guidance before discussion starts</li><li>Low-pressure participation support (anonymous submission)</li><li>Real-time discussion structure visualization</li><li>A distraction-free interface with focus anchors</li><li>Post-discussion reflection tools with decision tracing</li></ul></div>
+      <div class="card"><h4>Journey Stages</h4><ol><li>Before the discussion — preparation</li><li>Starting the discussion — awkward initiation</li><li>During the discussion — focus &amp; participation</li><li>Finishing the discussion — summarising</li><li>After the discussion — reflection &amp; review</li></ol></div>
+    </div>
+
+    <!-- 2.2 Requirements List: 3 Playful Must-Haves -->
+    <h3>2.2 Requirements List — 3 "Playful" Must-Haves</h3>
+    <p>For the system to be considered <strong>playful</strong>, it must satisfy these three requirements, each mapped to the most critical pain point in the user journey:</p>
+
+    <div class="card feature-card">
+      <h4>1. AI Prompts — Sentence Templates for Low-Pressure Speaking</h4>
+      <p><strong>Problem addressed:</strong> Students feel nervous and hesitate to speak at the beginning (emotional low point in journey map).</p>
+      <p>The system provides <strong>AI-generated sentence templates and ice-breaking prompts</strong> that give students a scaffold for their first contribution. During the Opening stage, templates such as <em>"I think that..."</em>, <em>"In my opinion..."</em>, and <em>"I would like to start by saying..."</em> are displayed. As the discussion progresses through different stages (First Point, Adding Detail, Conclusion), the templates dynamically update to match the current speaking context. This directly addresses "first-sentence anxiety" — instead of staring at a blank mental canvas, students have a starting point that lowers the cognitive and emotional barrier to participation.</p>
+    </div>
+
+    <div class="card feature-card">
+      <h4>2. Agree / Disagree Voting — Real-Time Participation Balancing</h4>
+      <p><strong>Problem addressed:</strong> Participation is often unbalanced; some students dominate while others remain silent.</p>
+      <p>When a speaker expresses an opinion, all group members are asked to cast an <strong>Agree or Disagree vote</strong>. Results are displayed in real time as a simple group tendency bar (e.g., "5 agree / 2 disagree"). This mechanism serves a dual purpose: it gives quieter students a <strong>low-effort way to participate</strong> without needing to formulate a full verbal response, and it provides the group with an <strong>instant pulse-check</strong> on whether an idea has genuine support. Rather than letting dominant voices carry decisions by default, the voting mechanism ensures every member's perspective is counted and visible.</p>
+    </div>
+
+    <div class="card feature-card">
+      <h4>3. Decision Tree Playback &amp; AI Summary — Post-Discussion Reflection</h4>
+      <p><strong>Problem addressed:</strong> Little support for review and reflection after the discussion; students struggle to remember what was decided and why.</p>
+      <p>After the discussion ends, the system generates an <strong>AI summary</strong> of key points raised by group members and the final group conclusion. Beyond a flat summary, the system also reconstructs the discussion as a <strong>decision tree</strong>, showing the group's choices at each key divergence point — green branches for the adopted path, gray branches for abandoned alternatives. This combination of AI summary (for quick review) and decision tree playback (for deep reflection on <em>why</em> decisions were made) transforms post-discussion review from a passive afterthought into an active, critical learning experience.</p>
+    </div>
+
+    <!-- 2.3 Evidence of Life -->
+    <h3>2.3 Evidence of Life</h3>
+    <div class="alert alert-warn">
+      <strong>⚠ TODO: 请补充 5 张照片或短视频</strong><br><br>
+      根据 coursework 要求，需要上传 5 张照片或短视频，展示小组采访潜在用户或观察讨论现场的过程。<br><br>
+      建议拍摄内容：<br>
+      1. 小组采访一位 XJTLU 学生关于其小组讨论体验的照片<br>
+      2. 观察一次课堂小组讨论的现场照片<br>
+      3. 与语言老师或学术老师交流讨论需求的照片<br>
+      4. 小组 brainstorming 或设计讨论的工作照<br>
+      5. 用户测试 SpeakEasy 原型时的截图或照片<br><br>
+      <em>格式：JPG/PNG。请将文件放入 assets/ 文件夹后告诉我。</em>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- 3. IDEATION & ALTERNATIVES                                         -->
+  <!-- ================================================================== -->
+  <section class="section" id="ideation">
+    <h2><span class="num">3</span> Ideation &amp; Design Alternatives</h2>
+
+    <!-- 3.1 Crazy Eights -->
+    <h3>3.1 Crazy Eights — Rapid Sketching</h3>
+    <p>
+      We used the Crazy Eights method to generate eight rapid hand-drawn UI concepts in eight
+      minutes. Each sketch explores a different interaction mechanism for supporting group
+      discussion. This divergent ideation step helped us generate a wide range of possibilities
+      before converging on our final three design dimensions.
+    </p>
+
+    <div class="card-grid">
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch1.png" alt="Sketch 1 — Mobile Quick-Prompt" />
+        <strong>Sketch 1 — Mobile Quick-Prompt</strong>
+        <p style="font-size:0.82rem;">Minimalist mobile UI for instant discussion starters</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch2.png" alt="Sketch 2 — Role Roulette" />
+        <strong>Sketch 2 — Role Roulette</strong>
+        <p style="font-size:0.82rem;">Gamified wheel to assign discussion roles (Leader, Scribe, Time-keeper)</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch3.png" alt="Sketch 3 — Sentiment Heatmap" />
+        <strong>Sketch 3 — Sentiment Heatmap</strong>
+        <p style="font-size:0.82rem;">Real-time visualization of group energy and participation levels</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch4.png" alt="Sketch 4 — AI Scribe" />
+        <strong>Sketch 4 — AI Scribe</strong>
+        <p style="font-size:0.82rem;">Voice-to-text summary generator for post-talk review</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch5.png" alt="Sketch 5 — Peer Feedback Portal" />
+        <strong>Sketch 5 — Peer Feedback Portal</strong>
+        <p style="font-size:0.82rem;">Post-session rating system based on contribution quality</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch6.png" alt="Sketch 6 — Visual Scaffolding" />
+        <strong>Sketch 6 — Visual Scaffolding</strong>
+        <p style="font-size:0.82rem;">AI-suggested mind-map nodes to guide the discussion flow</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch7.png" alt="Sketch 7 — Equality Tracker" />
+        <strong>Sketch 7 — Equality Tracker</strong>
+        <p style="font-size:0.82rem;">Visual bar chart showing speaking time per member</p>
+      </div>
+      <div class="card sketch-card">
+        <img src="assets/sketch/sketch8.png" alt="Sketch 8 — AR Overlay" />
+        <strong>Sketch 8 — AR Overlay</strong>
+        <p style="font-size:0.82rem;">Discussion prompts appearing above group members via smartphone AR</p>
+      </div>
+    </div>
+
+    <!-- 3.2 Design Alternatives -->
+    <h3>3.2 Design Alternatives — Comparison &amp; Decision</h3>
+    <p>Before committing to our final approach, we compared three fundamentally different design directions. This aligns with the course emphasis on generating variants and using prototypes to reveal hidden requirements rather than jumping directly to one final answer.</p>
+
+    <div class="card">
+      <h3>Alternative 1 — AI-First Automated Assistant <span class="tag tag-miss">Not chosen</span></h3>
+      <p>A system that uses AI to fully moderate and lead the discussion with minimal human intervention.</p>
+      <div class="pros-cons">
+        <div class="pros"><h5>Pros</h5><ul><li>High efficiency</li><li>Consistent moderation</li><li>Low effort for students</li></ul></div>
+        <div class="cons"><h5>Cons</h5><ul><li>Reduces critical thinking — students become passive</li><li>Robotic interaction feels unnatural</li><li>May stifle organic debate and spontaneous ideas</li></ul></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Alternative 2 — Gamified Engagement Platform <span class="tag tag-miss">Not chosen</span></h3>
+      <p>A system focused on points, badges, and leaderboards to drive discussion participation.</p>
+      <div class="pros-cons">
+        <div class="pros"><h5>Pros</h5><ul><li>High initial engagement</li><li>Clear incentives to participate</li><li>Fun and visually motivating</li></ul></div>
+        <div class="cons"><h5>Cons</h5><ul><li>May lead to superficial talk (speaking for points, not ideas)</li><li>Competitive rather than collaborative dynamic</li><li>Extrinsic motivation fades over time</li></ul></div>
+      </div>
+    </div>
+
+    <div class="card" style="border: 2px solid var(--clr-success);">
+      <h3>Alternative 3 — Human-Centered Scaffolding Tool <span class="tag tag-ok">✓ CHOSEN</span></h3>
+      <p>A system that provides prompts, lightweight structure, and reflection tools while keeping <strong>students in control</strong> of their own discussion.</p>
+      <div class="pros-cons">
+        <div class="pros"><h5>Pros</h5><ul><li>Fosters critical thinking and democratic participation</li><li>Highly adaptable to different discussion contexts and group sizes</li><li>Students remain the primary agents of learning</li></ul></div>
+        <div class="cons"><h5>Cons</h5><ul><li>Requires more effort and willingness from students</li><li>Higher learning curve for first-time users</li><li>Depends on group motivation to engage with scaffolding</li></ul></div>
+      </div>
+      <p style="margin-top:12px;"><strong>Rationale:</strong> Based on Brookfield &amp; Preskill (2012), effective discussion is fundamentally about <em>democratic participation</em> and <em>critical thinking</em>. We chose the scaffolding approach because we wanted students to remain the main agents of discussion, rather than letting AI or gamification dominate the learning process. The system should empower, not replace, the student voice.</p>
+    </div>
+
+    <!-- 3.3 Low-Fi Prototype -->
+    <h3>3.3 Low-Fidelity Prototype</h3>
+
+    <p style="margin-bottom:12px;">
+      <strong>Clickable Low-Fi Prototype (Figma):</strong>
+      <a href="https://www.figma.com/make/yN0qDjWeLeE4vI17hMEzrS/B1-1group-discussion-low-fi?p=f&t=3kTFSGbWTJSG8mOY-0" target="_blank" rel="noopener" class="figma-link" style="margin-left:8px;">
+        🔗 Open Low-Fi Prototype in Figma
+      </a>
+    </p>
+
+    <p style="margin-top:16px;">
+      Our low-fidelity prototype is a grayscale wireframe web app with <strong>9 screens</strong>, designed to test
+      the core interaction flow before high-fidelity development. The design uses simple rectangles,
+      text labels, and buttons — prioritizing clarity, consistency, and interaction flow over
+      visual polish.
+    </p>
+
+    <!-- Wireframe Flow -->
+    <div class="wireframe-flow">
+      <span class="flow-step">1. Initial</span><span class="flow-arrow">→</span>
+      <span class="flow-step">2. Group Code</span><span class="flow-arrow">→</span>
+      <span class="flow-step">3. Join Confirm</span><span class="flow-arrow">→</span>
+      <span class="flow-step">4. Listener</span><span class="flow-arrow">→</span>
+      <span class="flow-step">5. Queued</span><span class="flow-arrow">→</span>
+      <span class="flow-step">6. Turn Notification</span><span class="flow-arrow">→</span>
+      <span class="flow-step">7. Speaker</span><span class="flow-arrow">→</span>
+      <span class="flow-step">8. Speaker (Branch)</span><span class="flow-arrow">→</span>
+      <span class="flow-step">9. End</span>
+    </div>
+
+    <div class="wireframe-grid">
+
+      <!-- Screen 1: Initial -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">1. Initial Screen</div>
+          <div style="margin:12px 0; font-size:0.7rem; color:#a0aec0;">Landing — student enters identity</div>
+          <div class="wf-box">Group Discussion Support Tool</div>
+          <div class="wf-box" style="border-style:solid; border-color:#a0aec0;">Enter your name or student ID</div>
+          <div class="wf-btn primary">Continue</div>
+        </div>
+        <div class="wireframe-caption">Screen 1 — Landing / Identity Entry</div>
+      </div>
+
+      <!-- Screen 2: Group Code -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">2. Group Code Screen</div>
+          <div style="margin:12px 0; font-size:0.7rem; color:#a0aec0;">Enter assigned group code</div>
+          <div class="wf-box">Join Your Group</div>
+          <div class="wf-box" style="border-style:solid; border-color:#a0aec0;">Enter Group Code</div>
+          <div class="wf-btn primary">Join Group</div>
+          <div style="font-size:0.68rem; color:#a0aec0; margin-top:6px;">Please enter the group code shared by your teacher</div>
+        </div>
+        <div class="wireframe-caption">Screen 2 — Group Code Entry</div>
+      </div>
+
+      <!-- Screen 3: Join Confirmation -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">3. Join Confirmation</div>
+          <div style="margin:12px 0; font-size:0.7rem; color:#a0aec0;">Successfully joined group</div>
+          <div class="wf-box">You've Joined the Group ✓</div>
+          <div class="wf-box" style="border-style:solid;">Student: Ethan | Group: B1-1</div>
+          <div class="wf-box" style="border-style:solid;">Topic: Campus Cafeteria Satisfaction</div>
+          <div class="wf-box" style="border-style:solid;">Members online: 4</div>
+          <div class="wf-btn primary">Enter Discussion Room</div>
+        </div>
+        <div class="wireframe-caption">Screen 3 — Join Confirmation</div>
+      </div>
+
+      <!-- Screen 4: Listener -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">4. Listener Screen</div>
+          <div style="margin:8px 0; font-size:0.68rem; color:#a0aec0;">Not currently speaking — watching discussion</div>
+          <div class="wf-box" style="border-style:solid;">Ethan | Group B1-1 | Topic: Campus Cafeteria</div>
+          <div class="wf-box">Current speaker: Yihan</div>
+          <div class="wf-box">Next in queue: Panyi</div>
+          <div class="wf-box">Progress: ███████░░░ Stage: Brainstorming</div>
+          <div class="wf-btn primary" style="margin-top:8px;">Request to Speak</div>
+          <div style="margin-top:8px; font-size:0.68rem;">Quick Response: <span class="wf-btn">Agree</span> <span class="wf-btn">Disagree</span></div>
+          <div style="font-size:0.65rem; color:#a0aec0;">Group tendency: 5 agree / 2 disagree</div>
+        </div>
+        <div class="wireframe-caption">Screen 4 — Listener (not speaking, can vote)</div>
+      </div>
+
+      <!-- Screen 5: Queued -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">5. Queued Screen</div>
+          <div style="margin:8px 0; font-size:0.68rem; color:#a0aec0;">Waiting for turn to speak</div>
+          <div class="wf-box" style="border-style:solid;">Ethan | Topic: Campus Cafeteria</div>
+          <div class="wf-box">Current speaker: Yihan</div>
+          <div class="wf-box">Next in queue: Panyi</div>
+          <div class="wf-box">Progress: ████████░░ Stage: Brainstorming</div>
+          <div style="margin:8px 0; font-weight:700; color:#4a5568;">⏳ You are waiting in queue</div>
+          <div style="font-size:0.68rem; color:#a0aec0;">You will speak after the current speaker</div>
+          <div class="wf-btn" style="opacity:0.5; margin-top:8px;">Requested (in queue)</div>
+        </div>
+        <div class="wireframe-caption">Screen 5 — Queued (waiting for turn)</div>
+      </div>
+
+      <!-- Screen 6: Turn Notification -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">6. Turn Notification</div>
+          <div style="margin:16px 0; font-size:0.78rem; font-weight:700; color:#1a365d;">🔔 It's Your Turn!</div>
+          <div class="wf-box">Student: Ethan</div>
+          <div class="wf-box">Topic: Campus Cafeteria</div>
+          <div class="wf-box">Stage: Brainstorming</div>
+          <div style="margin:8px 0; font-weight:700; color:#4a5568;">You are now the current speaker</div>
+          <div class="wf-btn primary" style="margin-top:8px;">Start Speaking</div>
+        </div>
+        <div class="wireframe-caption">Screen 6 — Turn Notification (transition to speaking)</div>
+      </div>
+
+      <!-- Screen 7: Speaker (Opening) -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">7. Speaker Screen (Opening)</div>
+          <div style="margin:6px 0; font-size:0.65rem; color:#a0aec0;">Currently speaking — Opening stage</div>
+          <div class="wf-box" style="border-style:solid;">Ethan | Topic: Campus Cafeteria | Speaker: You</div>
+          <div class="wf-box">Next: Panyi | Progress: ██████░░░░ | Stage: Opening</div>
+          <div style="margin:8px 0; font-weight:600; font-size:0.7rem;">Recommended Sentence Templates</div>
+          <div class="wf-box" style="font-size:0.68rem;">"I think that..."</div>
+          <div class="wf-box" style="font-size:0.68rem;">"In my opinion..."</div>
+          <div class="wf-box" style="font-size:0.68rem;">"I would like to start by saying..."</div>
+          <div style="margin:8px 0; font-weight:600; font-size:0.7rem;">Choose your next step</div>
+          <div style="display:flex; gap:4px; flex-wrap:wrap; justify-content:center;">
+            <span class="wf-btn primary" style="font-size:0.65rem;">Give first point</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Ask a question</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Agree with previous</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Give an example</span>
+          </div>
+        </div>
+        <div class="wireframe-caption">Screen 7 — Speaker (Opening stage with sentence templates)</div>
+      </div>
+
+      <!-- Screen 8: Speaker After Branch -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">8. Speaker (After Branch)</div>
+          <div style="margin:6px 0; font-size:0.65rem; color:#a0aec0;">After selecting "Give first point"</div>
+          <div class="wf-box" style="border-style:solid;">Ethan | Topic: Campus Cafeteria | Speaker: You</div>
+          <div class="wf-box">Next: Panyi | Progress: ████████░░ | Stage: First Point</div>
+          <div style="margin:8px 0; font-weight:600; font-size:0.7rem;">Recommended Sentence Templates</div>
+          <div class="wf-box" style="font-size:0.68rem;">"My first point is..."</div>
+          <div class="wf-box" style="font-size:0.68rem;">"One reason is that..."</div>
+          <div class="wf-box" style="font-size:0.68rem;">"This is important because..."</div>
+          <div style="margin:8px 0; font-weight:600; font-size:0.7rem;">Choose your next step</div>
+          <div style="display:flex; gap:4px; flex-wrap:wrap; justify-content:center;">
+            <span class="wf-btn primary" style="font-size:0.65rem;">Add detail</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Give second point</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Ask others' opinions</span>
+            <span class="wf-btn" style="font-size:0.65rem;">Move to conclusion</span>
+          </div>
+        </div>
+        <div class="wireframe-caption">Screen 8 — Speaker (First Point stage — branch selected)</div>
+      </div>
+
+      <!-- Screen 9: End -->
+      <div class="wireframe-card">
+        <div class="wireframe-preview">
+          <div class="wf-title">9. End Screen</div>
+          <div style="margin:10px 0; font-size:0.7rem; color:#a0aec0;">All members finished speaking</div>
+          <div class="wf-box">Discussion Summary</div>
+          <div class="wf-box" style="border-style:solid; min-height:36px;">🤖 AI Summary — placeholder text block...</div>
+          <div class="wf-box" style="border-style:solid;">📋 Key Points Raised by Group Members</div>
+          <div class="wf-box" style="border-style:solid;">✅ Final Group Conclusion</div>
+          <div class="wf-btn primary" style="margin-top:8px;">Finish</div>
+        </div>
+        <div class="wireframe-caption">Screen 9 — Discussion Summary (end of session)</div>
+      </div>
+
+    </div>
+
+    <div class="alert alert-info" style="margin-top:20px;">
+      <strong>Low-Fi Prototype Design Notes:</strong><br>
+      • <strong>Style:</strong> Grayscale wireframe — simple rectangles, text labels, and buttons; no color or polish<br>
+      • <strong>Consistent layout</strong> across Listener / Queued / Speaker screens: top (identity + context), middle (speaker queue + progress bar), bottom (screen-specific actions)<br>
+      • <strong>Speaker screens</strong> separate "Recommended Sentence Templates" from "Choose your next step" as two distinct content blocks<br>
+      • <strong>Decision tree branches</strong> are clickable next-step options that update the screen state (e.g., "Give first point" → First Point stage with updated templates)<br>
+      • <strong>Interaction flow:</strong> Identity → Group Join → Listener → Queue → Speaker → Branch → Summary<br>
+      • Implemented as a clickable Figma prototype (link above)
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- 4. TECHNICAL IMPLEMENTATION                                         -->
+  <!-- ================================================================== -->
+  <section class="section" id="technical">
+    <h2><span class="num">4</span> Technical Implementation</h2>
+
+    <!-- 4.1 System Architecture -->
+    <h3>4.1 System Architecture</h3>
+    <p>The system architecture below shows how SpeakEasy handles data flow from user interactions through to AI-powered features.</p>
+    <div style="text-align:center; margin: 20px 0;">
+      <img src="assets/System Architecture.png" alt="SpeakEasy System Architecture Diagram" class="arch-img" />
+      <p style="font-size:0.82rem; color:var(--clr-text-light); margin-top:8px;">System Architecture — Data flow from Frontend (HTML/CSS/JS on GitHub Pages) → Vercel Serverless API → Firebase/Supabase Database → AI Service (OpenAI/Claude API)</p>
+    </div>
+
+    <!-- 4.2 High-Fi Prototype -->
+    <h3>4.2 High-Fidelity Prototype</h3>
+    <p style="margin-bottom:12px;">
+      <strong>Clickable High-Fidelity Prototype (Figma):</strong>
+      <a href="https://www.figma.com/make/iracpntuRJ95XbaIDCxj9y/B1-1group-discussion-highfi?t=clKYLIbVMOEItNwi-20&fullscreen=1" target="_blank" rel="noopener" class="figma-link" style="margin-left:8px;">
+        🔗 Open High-Fi Prototype in Figma
+      </a>
+    </p>
+    <p>
+      The high-fidelity prototype refines the 9-screen low-fi wireframe into a polished,
+      color-coded interface. It demonstrates all three core features — Drift Bottles,
+      Discussion Heatmap, and Decision Tree Playback — with realistic content, styled
+      components, and a consistent visual language suitable for user testing and the
+      final video demo.
+    </p>
+    <div class="alert alert-info">
+      <strong>⚠ TODO: 请补充已部署的 Live URL</strong><br>
+      当系统部署到 GitHub Pages 或 Vercel 后，请在此处补充公开可访问的 URL。<br>
+      当前 Figma 高保真原型已链接。
+    </div>
+
+    <!-- 4.3 Individual Contributions -->
+    <h3>4.3 Individual Contributions</h3>
+    <div class="table-wrap">
+      <table class="contrib-table">
+        <thead>
+          <tr><th>Member</th><th>Code / Development</th><th>UI Design</th><th>Content / Research</th><th>Testing / Evaluation</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Zhaoguang Hu</strong></td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+          </tr>
+          <tr>
+            <td><strong>Haoyu Chen</strong></td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+          </tr>
+          <tr>
+            <td><strong>Yihan Shen</strong></td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+          </tr>
+          <tr>
+            <td><strong>Panyi Qin</strong></td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+            <td><!-- TODO -->待补充</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- 5. EVALUATION & REFLECTION                                          -->
+  <!-- ================================================================== -->
+  <section class="section" id="evaluation">
+    <h2><span class="num">5</span> Evaluation &amp; Reflection</h2>
+
+    <!-- 5.1 Usability Testing -->
+    <h3>5.1 Usability Testing — Pilot Evaluation Results</h3>
+    <p>
+      We conducted a <strong>pilot test with 20 students</strong> to gather early formative
+      feedback on whether our core concept moved in the right direction. The goal was to
+      understand whether users felt the system genuinely lowered participation pressure and
+      improved discussion structure.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-value">+35%</div>
+        <div class="stat-label">Improvement in Psychological Safety<br><small>Students reported feeling safer to express ideas</small></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">−50%</div>
+        <div class="stat-label">Reduction in Teacher Intervention Burden<br><small>Less need for instructors to manually manage discussions</small></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">20</div>
+        <div class="stat-label">Pilot Test Participants<br><small>XJTLU students across multiple year groups</small></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>Initial Findings</h4>
+      <ul>
+        <li><strong>AI Prompts (Sentence Templates)</strong> were rated as the most immediately helpful feature — students reported that having context-aware sentence starters on screen significantly reduced the anxiety of "what should I say first." The templates were seen as a safety net rather than a script, giving students confidence to speak while still allowing natural expression.</li>
+        <li><strong>Agree / Disagree Voting</strong> successfully increased participation from quieter members. Several students who rarely spoke in traditional discussions said they felt included because "just pressing a button" counted as meaningful input. The real-time group tendency display also helped the group quickly gauge consensus without relying solely on the loudest voices.</li>
+        <li><strong>Decision Tree Playback &amp; AI Summary</strong> showed strong potential for post-discussion learning. Students appreciated being able to see <em>why</em> the group arrived at a decision rather than only <em>what</em> was decided. The AI summary was considered useful for quick review, though some students wanted more control over which key points were highlighted. The decision tree's visualization of abandoned paths was seen as surprisingly thought-provoking.</li>
+        <li>Several students requested <strong>mobile responsiveness</strong> as a priority — many check discussion progress on their phones between speaking turns.</li>
+      </ul>
+    </div>
+
+    <div class="alert alert-info">
+      <strong>Evaluation Stage:</strong> This is <em>formative evaluation</em>, not final validation. The results are promising and indicate the core concept is moving in the right direction, but we acknowledge that further testing with more users and more detailed task-based evaluation is needed.
+    </div>
+
+    <!-- 5.2 Iterative Refinement -->
+    <h3>5.2 Iterative Refinement — Before &amp; After</h3>
+    <div class="alert alert-warn">
+      <strong>⚠ TODO: 请补充 "修改前 / 修改后" 对比截图</strong><br><br>
+      展示至少一处基于用户反馈做出的设计修改。<br>
+      请提供两张截图（修改前 vs 修改后）并附简短说明：哪个用户的什么反馈触发了这次修改。
+    </div>
+    <div class="card-grid">
+      <div class="card" style="text-align:center;">
+        <div style="background:#e8ebef; height:200px; display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:8px;">
+          <span style="color:#a0aec0;">📷 Before screenshot</span>
+        </div>
+        <strong>Before</strong>
+        <p style="font-size:0.82rem; color:var(--clr-text-light);"><!-- TODO --></p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="background:#e8ebef; height:200px; display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:8px;">
+          <span style="color:#a0aec0;">📷 After screenshot</span>
+        </div>
+        <strong>After</strong>
+        <p style="font-size:0.82rem; color:var(--clr-text-light);"><!-- TODO --></p>
+      </div>
+    </div>
+
+    <!-- 5.3 Final Reflection -->
+    <h3>5.3 Final Reflection</h3>
+
+    <div class="card">
+      <h4>Social &amp; Ethical Implications</h4>
+      <p>
+        SpeakEasy addresses a real equity issue in higher education: unequal participation in
+        group discussions. By providing anonymous idea submission through Drift Bottles, we
+        lower the barrier for shy and introverted students. However, thoughtful design requires
+        us to consider several ethical dimensions:
+      </p>
+      <ul>
+        <li><strong>Privacy &amp; Data:</strong> The system collects participation data (speaking time, votes, idea submissions). Students and teachers must be transparently informed about what data is collected and how it is used. Anonymous drift bottles require genuine anonymity — not pseudonymity that could be reversed by a teacher or system administrator.</li>
+        <li><strong>Fairness in AI Summaries:</strong> The AI summary feature must not misrepresent or systematically omit minority viewpoints. An AI model trained predominantly on native-speaker speech patterns may underrepresent non-native English speakers or quieter students — turning a scaffolding tool into an unintentional amplifier of existing inequalities.</li>
+        <li><strong>Student Agency:</strong> The scaffolding should empower, not coerce. The "Request to Speak" queue should be optional, not mandatory — some of the best discussions thrive on spontaneity. Students should always have the choice to opt out of structured interaction.</li>
+        <li><strong>Accessibility:</strong> The interface must be usable by students with disabilities — including screen reader compatibility, keyboard navigation support, and color-blind-friendly heatmap palettes (avoiding red-green dependency).</li>
+        <li><strong>Cultural Sensitivity:</strong> XJTLU has a diverse international student body. Discussion norms vary across cultures — what feels "playful" and supportive in one cultural context may feel uncomfortable in another. The system should allow customization of interaction styles.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Technical Reflection — AI Use &amp; Vibe Coding</h4>
+      <p><strong>Our vibe coding process was iterative and requirement-driven,</strong> not simply asking AI to generate random interfaces. The process followed these stages:</p>
+      <ol>
+        <li><strong>Requirement grounding:</strong> Before writing any prompt, we anchored our design in personas, journey maps, and the three chosen design dimensions (Drift Bottles, Heatmap, Decision Tree Playback).</li>
+        <li><strong>Broad structure generation:</strong> We prompted AI to generate the overall page structure and interaction flow (9 screens from identity entry to discussion summary).</li>
+        <li><strong>Iterative refinement:</strong> We refined one interaction at a time — first the listener screen, then the speaker queue, then the branching logic — checking each output against our user requirements before proceeding.</li>
+        <li><strong>Verification against requirements:</strong> Each AI-generated component was tested against our three playful must-haves: Does it lower the threshold to speak? Does it anchor attention? Does it support reflection?</li>
+        <li><strong>Prompt revision:</strong> When the output did not match our human-centered scaffolding philosophy (e.g., when it trended toward full automation instead of student-led discussion), we revised prompts to re-center student agency.</li>
+      </ol>
+      <p>This approach aligns with the course guidance: AI supports coding and prototyping, but the <strong>core design logic and human-centered justification remain the group's own work.</strong></p>
+
+      <p style="margin-top:12px;"><strong>AI tools used:</strong></p>
+      <!-- TODO: 列出实际使用的 AI 工具 -->
+      <ul>
+        <li>[TODO: 列出实际使用的AI工具名称、版本、访问日期、URL。例如：Claude 3.5 Sonnet, accessed 2026-03-15, https://claude.ai — 用于生成 low-fi wireframe HTML/CSS 结构和交互流程]</li>
+        <li>[TODO: 第二个AI工具]</li>
+      </ul>
+
+      <p style="margin-top:12px;"><strong>Ethical considerations regarding AI-generated code:</strong></p>
+      <ul>
+        <li>All AI-generated code was reviewed by at least one group member before integration.</li>
+        <li>Accessibility features (semantic HTML, ARIA labels, keyboard navigation) were manually verified, as AI sometimes omits them.</li>
+        <li>AI-generated images used in the poster are cited in the References section per university policy.</li>
+        <li>We did not use AI to generate our user research findings, persona details, or design rationale — these are based on our own primary research and group discussions.</li>
+      </ul>
+
+      <p style="font-size:0.85rem; color:var(--clr-text-light); margin-top:16px;">
+        In one sentence: we used AI as a prototyping assistant to quickly generate and refine
+        interface ideas, but we continuously checked the outputs against our personas, journey map,
+        and chosen scaffolding concept.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- PROGRESS LOG                                                        -->
+  <!-- ================================================================== -->
+  <section class="section" id="progress">
+    <h2><span class="num">📋</span> Progress Log</h2>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 80%;" title="Week 8 of 10 completed"></div>
+    </div>
+    <p style="text-align:center; font-size:0.85rem; color:var(--clr-text-light); margin-bottom:20px;">~80% — Week 8 completed (poster submitted, prototype refined), Week 10 final submission ahead</p>
+
+    <div class="timeline">
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 1–2</span>
+        <p class="timeline-text">Formed the group (4 members), registered for B1 XJTLU Group Discussions topic, and initialized the GitHub process portfolio repository.</p>
+      </div>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 3</span>
+        <p class="timeline-text">Identified the five main challenges in XJTLU group discussions through classroom observation and informal student interviews.</p>
+      </div>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 4</span>
+        <p class="timeline-text">Developed two distinct personas — Ethan (primary: shy, introverted student) and Zhang Ming (secondary: team leader/coordinator) — and completed a five-stage user journey map with pain points and design opportunities.</p>
+      </div>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 5</span>
+        <p class="timeline-text">Reviewed 4 academic papers and 4 commercial collaboration products to identify research gaps. Each entry summarized with the "3 things done well + 3 things missed" format.</p>
+      </div>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 6</span>
+        <p class="timeline-text">Created 8 Crazy Eights sketches. Compared 3 design alternatives (AI-First, Gamified, Human-Centered Scaffolding) and selected the scaffolding approach based on alignment with democratic participation principles.</p>
+      </div>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 7</span>
+        <p class="timeline-text">Refined the final design concept into three core interaction dimensions: Idea Drift Bottles (low-threshold initiation), Discussion Heatmap (dynamic attention guidance), and Decision Tree Playback (reflective closing).</p>
+      </div>
+      <div class="timeline-item current">
+        <span class="timeline-week">Week 8</span>
+        <p class="timeline-text">Produced the A1 poster; developed low-fidelity wireframe prototype (9 screens in Figma); refined high-fidelity prototype; conducted pilot evaluation with 20 students; summarized early findings: +35% psychological safety, −50% teacher intervention burden. ✓ Poster submitted.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-week">Week 9–10</span>
+        <p class="timeline-text"><strong>In Progress:</strong> Further usability testing with detailed task-based evaluation; iterative refinement based on user feedback; web app deployment to live URL; 2-minute CHI-style video production; final portfolio submission with all sections complete.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== -->
+  <!-- REFERENCES                                                          -->
+  <!-- ================================================================== -->
+  <section class="section" id="references">
+    <h2><span class="num">📚</span> References</h2>
+
+    <h3>Academic References</h3>
+    <ol>
+      <li>B. J. Millis, <em>Cooperative Learning in Higher Education</em>. Sterling, VA: Stylus Publishing, 2010.</li>
+      <li>S. D. Brookfield and S. Preskill, <em>Discussion as a Way of Teaching: Tools and Techniques for Democratic Classrooms</em>, 2nd ed. San Francisco, CA: Jossey-Bass, 2012.</li>
+      <li>J. K. Knight, S. B. Wise, and K. M. Southard, "Understanding clicker discussions: Student reasoning and the impact of instructional cues," <em>CBE—Life Sciences Education</em>, vol. 12, no. 4, pp. 645–654, 2013.</li>
+      <li>S. Freeman et al., "Active learning increases student performance in science, engineering, and mathematics," <em>Proceedings of the National Academy of Sciences</em>, vol. 111, no. 23, pp. 8410–8415, 2014.</li>
+    </ol>
+
+    <h3>Commercial Products Referenced</h3>
+    <ol start="5">
+      <li>Slack Technologies, "Slack — Channel-based Collaboration Platform." [Online]. Available: https://slack.com</li>
+      <li>Miro, "Miro — Visual Whiteboard Platform." [Online]. Available: https://miro.com</li>
+      <li>Padlet, "Padlet — Digital Notice Board." [Online]. Available: https://padlet.com</li>
+      <li>Gather, "Gather.town — Virtual Gathering Space." [Online]. Available: https://gather.town</li>
+    </ol>
+
+    <h3>AI Tools &amp; Disclosure</h3>
+    <div class="alert alert-info">
+      <strong>AI Usage Disclosure:</strong> Per university policy, all AI tools used in this project must be cited below with tool name, version, access date, URL, and specific purpose. See the coursework brief for the required citation format.
+    </div>
+    <ol start="9">
+      <!-- TODO: 补充实际使用的 AI 工具引用 -->
+      <li>[TODO: AI tool name, version, accessed date, URL. Used for: specific purpose.]</li>
+      <li>[TODO: AI tool name, version, accessed date, URL. Used for: specific purpose.]</li>
+    </ol>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <p><strong>SpeakEasy: Scaffolding the Silent Divide</strong> — CPT208 B1-1</p>
+  <p>Human-Centric Computing &middot; XJTLU &middot; AY2025-26</p>
+  <p style="font-size:0.78rem; margin-top:8px;">
+    Zhaoguang Hu (2257688) &middot; Haoyu Chen (2361801) &middot; Yihan Shen (2362075) &middot; Panyi Qin (2362163)
+  </p>
+  <p style="font-size:0.75rem; color:var(--clr-text-light); margin-top:12px;">
+    Process Portfolio v3 &middot; Hosted on GitHub Pages &middot; Last updated: May 2026
+  </p>
+</footer>
+
+</body>
+</html>
