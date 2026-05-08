@@ -528,6 +528,17 @@ code {
 
 .contrib-table tbody tr:nth-child(even) { background: #f8fafc; }
 
+/* Simplified two-column contribution table */
+.contrib-table--simple {
+  min-width: auto;
+}
+.contrib-table--simple th:first-child {
+  width: 35%;
+}
+.contrib-table--simple th:last-child {
+  width: 65%;
+}
+
 /* ----- Alert / Callout ----- */
 .alert {
   padding: 16px 20px;

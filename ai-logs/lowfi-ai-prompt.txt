@@ -1,0 +1,215 @@
+Design a low-fidelity web prototype for a language classroom group discussion support tool.
+
+The prototype is for students in classroom discussion groups with fewer than 10 members.
+The interface should be simple, grayscale, wireframe-like, and clearly structured, suitable for an early-stage low-fi prototype.
+Do not make it polished, colorful, or high-fidelity.
+Focus on clear layout, interaction flow, information hierarchy, buttons, and state changes.
+
+Create the following 9 screens for a simple desktop web app prototype
+
+1. Initial Screen
+
+A landing screen where a student enters their identity before joining a discussion group.
+
+Include
+
+Title Group Discussion Support Tool
+One input field labeled Enter your name or student ID
+One main button labeled Continue
+
+The layout should be very simple and clean, with the title at the top and the input and button centered below.
+
+2. Group Code Screen
+
+A screen where a student enters the assigned group code.
+
+Include
+
+Title Join Your Group
+One input field labeled Enter Group Code
+One button labeled Join Group
+Small helper text Please enter the group code shared by your teacher
+
+Keep this screen minimal and consistent with the first screen.
+
+3. Join Confirmation Screen
+
+A screen confirming that the student has successfully joined the correct group.
+
+Include
+
+Title You’ve Joined the Group
+Student name
+Group code
+Current discussion topic
+Members online
+One button labeled Enter Discussion Room
+
+This screen should clearly show that the student has joined the correct group and is ready to continue.
+
+4. Listener Screen
+
+A screen for students who are not currently speaking.
+
+Include
+
+Student name
+Group code
+Current discussion topic
+Current speaker
+Next in queue
+Discussion progress
+Current group stage
+One main button labeled Request to Speak
+
+Also include a Quick Response section
+
+Section title Quick Response
+Two buttons Agree and Disagree
+Small text below Group tendency 5 agree  2 disagree
+
+This screen should show the overall discussion status clearly.
+The vote area should be lightweight and simple, not a chart.
+
+5. Queued Screen
+
+A screen for a student who has already requested to speak and is waiting in the queue.
+
+Include
+
+Student name
+Current discussion topic
+Current speaker
+Next in queue
+Discussion progress
+Current group stage
+Status text You are waiting in queue
+Secondary status text You will speak after the current speaker
+One disabled or inactive-looking button labeled Requested
+
+This screen should look visually similar to the Listener Screen, but clearly indicate that the user is already queued.
+
+6. Turn Notification Screen
+
+A transition screen telling the student that it is now their turn to speak.
+
+Include
+
+Title It’s Your Turn
+Student name
+Current discussion topic
+Current group stage
+Status text You are now the current speaker
+One main button labeled Start Speaking
+
+This screen should be simple, clear, and focused on the transition.
+
+7. Speaker Screen
+
+A screen for the current speaker during the speaking process.
+
+Include
+
+Student name
+Current discussion topic
+Current speaker You
+Next in queue
+Discussion progress
+Current group stage
+A section titled Recommended Sentence Templates
+A section titled Choose your next step
+2 to 4 clickable next-step buttons
+
+For the Opening stage, include these sentence templates
+
+I think that...
+In my opinion...
+I would like to start by saying...
+
+Include these next-step buttons
+
+Give first point
+Ask a question
+Agree with previous idea
+Give an example
+
+This screen should clearly separate
+
+status information
+sentence templates
+action buttons
+8. Speaker Screen After Branch Selection
+
+Create another speaker-state screen that shows what happens after the speaker selects one branch.
+
+Keep the same layout as the Speaker Screen, but update
+
+Current group stage
+Discussion progress
+Recommended Sentence Templates
+Next-step options
+
+Use an example where the speaker selected Give first point.
+
+Include
+
+Current group stage First Point
+Recommended Sentence Templates
+My first point is...
+One reason is that...
+This is important because...
+Next-step buttons
+Add detail
+Give second point
+Ask for others’ opinions
+Move to conclusion
+
+This screen should look like the same interface in a new speaking stage.
+
+9. End Screen
+
+A final screen shown after all group members have finished speaking.
+
+Include
+
+Title Discussion Summary
+Section title AI Summary
+Section title Key Points Raised by Group Members
+Section title Final Group Conclusion
+One button labeled Finish
+
+This screen should present the result of the discussion in a simple low-fi structure.
+Use placeholder summary text blocks rather than detailed polished content.
+
+Layout Rules
+
+Use a consistent low-fi layout across discussion-related screens.
+
+For Listener, Queued, Speaker, and Branch Speaker screens
+
+Top section student name, group code, discussion topic
+Middle section current speaker, next in queue, progress, current stage
+Bottom section page-specific actions
+
+For Speaker screens
+
+Keep Recommended Sentence Templates and Choose your next step as two clearly separated content blocks
+Interaction Flow
+
+Show the prototype as a clickable low-fi flow
+
+Initial Screen → Continue → Group Code Screen
+Group Code Screen → Join Group → Join Confirmation Screen
+Join Confirmation Screen → Enter Discussion Room → Listener Screen
+Listener Screen → Request to Speak → Queued Screen
+Queued Screen → Turn Notification Screen
+Turn Notification Screen → Start Speaking → Speaker Screen
+Speaker Screen → select one next-step option → Speaker Screen After Branch Selection
+After all speakers finish → End Screen
+Design Requirements
+Use low-fidelity wireframe style
+Use grayscale only
+Use simple rectangles, text labels, and buttons
+Avoid polished UI, color emphasis, shadows, or detailed visual styling
+Prioritize clarity, consistency, and interaction flow
+Make it suitable for a student coursework low-fi prototype in Figma
