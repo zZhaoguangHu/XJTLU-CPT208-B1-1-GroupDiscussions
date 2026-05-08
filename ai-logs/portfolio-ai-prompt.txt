@@ -1,0 +1,207 @@
+============================================================
+  Portfolio AI Prompt Log — SpeakEasy CPT208 B1-1
+  AI Tool: Claude (Anthropic), Claude 4 model series
+  Date Range: April – May 2026
+  Purpose: Generate and iteratively refine the process
+           portfolio website (HTML/CSS) hosted on GitHub Pages
+============================================================
+
+NOTE: All design decisions, user research findings, persona
+details, evaluation results, and design rationale in this
+portfolio are the group's own primary work. AI was used
+solely for code generation, content formatting, and language
+refinement — not for generating research insights or design
+decisions.
+
+============================================================
+STAGE 1 — INITIAL PORTFOLIO STRUCTURE
+============================================================
+
+Prompt:
+
+I am building a process portfolio webpage for a university
+coursework project (CPT208 Human-Centric Computing). The
+portfolio must be a single-page HTML file with external CSS,
+hosted on GitHub Pages.
+
+The portfolio must follow this five-section structure
+required by the coursework brief:
+
+1. Motivation & Research — "Why" statement (~200 words),
+   academic gap analysis (4 papers, each with "3 things done
+   well / 3 things missed"), commercial product analysis
+   (4 products, same format), two user personas
+2. User Requirements — five-stage user journey map (table),
+   three playful must-have features, 5 user research photos
+3. Ideation & Alternatives — Crazy Eights sketches (8 images),
+   three design alternatives compared (pros/cons), low-fi
+   Figma prototype (9 wireframe screens)
+4. Technical Implementation — system architecture diagram,
+   high-fi prototype link, deployed live URL, individual
+   contributions table
+5. Evaluation & Reflection — usability testing results
+   (20-user pilot), before/after iterative refinement, social
+   and ethical implications, AI technical reflection
+
+I will provide all the content — text, images, data. Your
+job is to generate clean, responsive HTML and CSS that
+presents this content professionally.
+
+Requirements:
+- Sticky navigation bar linking to each section
+- Hero header with project title, subtitle, group info badges
+- Each section in a white card with rounded corners
+- Team member section with photos in a grid
+- Responsive: works on desktop and mobile
+- Color scheme: primary blue (#1a365d), accent orange,
+  light gray background
+- The CSS should use custom properties for consistency
+- Cards should have subtle hover effects
+- Progress timeline with visual markers for done/current states
+
+Generate the complete index.html and style.css files.
+
+============================================================
+STAGE 2 — CONTENT POPULATION
+============================================================
+
+Prompt:
+
+Now I will provide the actual content for each section.
+Please integrate this content into the portfolio structure,
+maintaining the existing visual design.
+
+[GROUP RESEARCH NOTES INSERTED HERE — content from:
+ - The Gap.docx (academic & commercial gap analysis)
+ - Research Purpose and Specific Objectives.docx
+ - Design Dimension.docx (three design dimensions)
+ - final design.docx
+ - User Personas .pdf (Ethan & Zhang Ming personas)
+ - user journey map notes
+ - Crazy Eights sketch descriptions
+ - system architecture diagram notes]
+
+IMPORTANT RULES:
+- Preserve the original meaning of all research content
+- Write in clear academic English at Year 3 undergraduate
+  level (not overly advanced, not too simple)
+- Do NOT invent new research findings, statistics, or claims
+- Do NOT generate fake user quotes or persona details
+- For the gap analysis, keep the "3 done well / 3 missed"
+  format exactly as provided
+- The "Why" statement should be my own words, lightly
+  polished for grammar and flow — do not rewrite it from
+  scratch
+
+Generate the updated HTML with all content populated.
+
+============================================================
+STAGE 3 — DESIGN ALTERNATIVES & PROTOTYPE SECTION
+============================================================
+
+Prompt:
+
+I need to add Section 3 (Ideation & Design Alternatives) to
+the portfolio. Here is the content:
+
+[CONTENT INSERTED — from Ideation & Alternatives.docx and
+alternative design.docx]:
+- 8 Crazy Eights sketch concepts with descriptions (images
+  in assets/sketch/)
+- 3 design alternatives: AI-First Automated Assistant,
+  Gamified Engagement Platform, Human-Centered Scaffolding
+  Tool (chosen)
+- Low-fi Figma prototype: 9 grayscale wireframe screens
+  with a clickable flow from Initial → Group Code → Join
+  Confirmation → Listener → Queued → Turn Notification →
+  Speaker → Speaker After Branch → End
+
+For the wireframe gallery, create CSS-styled wireframe
+preview cards (grayscale boxes with text labels) that
+visually represent each of the 9 screens without needing
+screenshots. Each card should show the screen name, key UI
+elements as styled divs, and a caption.
+
+Also add a visual flow diagram (numbered steps with arrows)
+showing the interaction sequence.
+
+============================================================
+STAGE 4 — EVALUATION & REFLECTION
+============================================================
+
+Prompt:
+
+Populate the Evaluation & Reflection section with:
+
+1. Pilot test results (20 XJTLU students) — three key
+   statistics: +35% psychological safety, -50% teacher
+   intervention burden, 20 participants
+2. Initial findings for each of the three core features
+3. Before/After comparison — user feedback "discussion is
+   verbal, typing feels unnatural" → voice recognition added
+4. Social & ethical implications (privacy, AI fairness,
+   accessibility, cultural sensitivity)
+5. Technical Reflection on AI use
+
+For the Technical Reflection: describe our 5-stage process
+(requirement grounding → structure generation → content
+population → iterative refinement → verification). Be
+honest about AI use — it helped with code and drafting, but
+design decisions and research findings are our own.
+
+============================================================
+STAGE 5 — ITERATIVE REFINEMENT (v2 → v5)
+============================================================
+
+Prompt (v3 update):
+
+The portfolio needs visual improvements:
+- Upgrade the color scheme with CSS custom properties
+- Add a progress bar showing ~80% completion (Week 8/10)
+- Improve card hover effects (translateY + shadow)
+- Make the journey map table horizontally scrollable on
+  mobile
+- Add "pros" (green background) and "cons" (red background)
+  styling blocks for the gap analysis comparison
+- Style persona cards with a two-column top section
+  (image + metadata) and a grid of content blocks below
+- Add status tags (chosen/not chosen) as colored badges
+
+Prompt (v4 update):
+
+Further refinements:
+- Add the wireframe gallery with CSS-only preview cards
+- Add stat cards for evaluation data (+35%, -50%, 20)
+- Add feature cards with left accent border
+- Add a sticky navigation bar with backdrop blur
+- Add numbered section headings with circular badges
+- Refine the hero section with a gradient background
+- Add a timeline component for the progress log
+
+Prompt (v5 final update):
+
+Final updates for Week 10 submission:
+- Replace Evidence of Life placeholder with 5 actual user
+  research photos (assets/group discuss1–5.jpg)
+- Add live system URL (https://easy-speak-umber.vercel.app/)
+- Add before/after screenshots with user feedback explanation
+- Fill individual contributions table (all 25% each)
+- Complete AI tools references [9][10] in IEEE format
+- Update progress bar to 90% (Week 10)
+- Final review: remove all TODO markers, verify all links
+  work, check responsive layout on mobile widths
+
+============================================================
+END OF PROMPT LOG
+============================================================
+
+Summary of AI Use:
+- AI generated HTML structure and CSS styling based on the
+  five-section coursework brief
+- AI helped format and polish English text from group
+  research notes (not generate new content)
+- AI generated wireframe preview cards and layout components
+- All design decisions, research findings, persona details,
+  and evaluation results are the group's own primary work
+- All AI output was reviewed by at least one group member
+  before integration

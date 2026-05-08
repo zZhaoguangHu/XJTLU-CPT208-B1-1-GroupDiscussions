@@ -1,0 +1,296 @@
+Design a high-fidelity web prototype for a classroom discussion support product called Group Discussion Tool.
+
+The product is designed for language classroom students in small discussion groups of fewer than 10 people.
+It should support students before, during, and after a group discussion.
+
+The visual style should be:
+
+clean
+friendly
+educational
+structured
+slightly playful
+suitable for a student project poster presentation
+
+Do not make it overly corporate, overly gamified, or visually noisy.
+
+Use a modern card-based interface with clear hierarchy and soft rounded corners.
+
+Visual style requirements
+Primary color: blue
+Background: very light gray
+Cards: white
+Text: dark gray and medium gray
+Agree button: soft green
+Disagree button: soft orange
+Error state: red
+Success feedback: green
+
+Use a clean sans-serif style similar to Inter.
+Use a layout that feels like a real web app and is suitable for both poster display and prototype presentation.
+
+Screens to Create
+
+Create the following 8 high-fidelity screens:
+
+1. Initial Page
+
+A combined welcome and group entry page.
+
+Include:
+
+Product name: Group Discussion Tool
+One input field labeled Enter your name or student ID
+One input field labeled Enter group code
+One main button labeled Enter
+
+Also show:
+
+one example error message state
+one example join success feedback
+
+Design notes:
+
+No short description text is needed
+The page should be minimal and clean
+The Enter button should be the main visual focus
+The two input fields should be vertically stacked and clearly separated
+2. Join Confirmation Page
+
+A confirmation screen after the student successfully joins the group.
+
+Include:
+
+Title: You’ve Joined the Group
+Student name
+Group code
+Current discussion topic
+Members online
+One main button labeled Enter Discussion Room
+
+Design this page as a clean confirmation screen with grouped information in cards.
+
+3. Listener Page
+
+A discussion room screen for students who are not currently speaking.
+
+Include:
+
+Student name
+Group code
+Current discussion topic
+Current speaker
+Next in queue
+Discussion progress
+Current group stage
+One main button labeled Request to Speak
+
+Also include a Quick Response area:
+
+Section title: Quick Response
+Two buttons: Agree and Disagree
+A small line of text showing: Group tendency: 5 agree / 2 disagree
+
+Design notes:
+
+The current speaker and current stage should be visually emphasized
+Use cards to separate topic information, discussion status, and quick response
+The quick response area should be clear but not dominate the page
+4. Queued Page
+
+A discussion room screen for a student who has already requested to speak and is waiting in the queue.
+
+Include:
+
+Student name
+Current discussion topic
+Current speaker
+Next in queue
+Discussion progress
+Current group stage
+Status text: You are waiting in queue
+Secondary text: You will speak after the current speaker
+One disabled button labeled Requested
+
+Design notes:
+
+This page should look very similar to the Listener Page
+The queue status should be clearly shown through badge, text, and button state
+Add a small queue position label if helpful
+5. Turn Notification Page
+
+A transition screen telling the student it is now their turn to speak.
+
+Include:
+
+Title: It’s Your Turn
+Student name
+Current discussion topic
+Current group stage
+Status text: You are now the current speaker
+One main button labeled Start Speaking
+
+Design notes:
+
+This page should feel focused and attention-grabbing
+Use a strong visual hierarchy
+The Start Speaking button should stand out
+6. Speaker Page
+
+A discussion screen for the current speaker.
+
+Include:
+
+Student name
+Current discussion topic
+Current speaker: You
+Next in queue
+Discussion progress
+Current group stage
+
+Add a section titled:
+
+Recommended Sentence Templates
+
+For the Opening stage, include these template sentences:
+
+I think that...
+In my opinion...
+I would like to start by saying...
+
+Add another section titled:
+
+Choose your next step
+
+Include these next-step buttons:
+
+Give first point
+Ask a question
+Agree with previous idea
+Give an example
+
+Design notes:
+
+The page should clearly separate status information, speaking templates, and action buttons
+Template sentences can be shown as cards, chips, or selectable blocks
+Next-step buttons should be easy to scan and click
+7. Speaker Page After Branch Selection
+
+A second speaker-state screen that shows the next discussion stage after the speaker chooses one option.
+
+Keep the same layout as the Speaker Page, but update the content.
+
+Use an example where the speaker selected Give first point.
+
+Include:
+
+Current group stage: First Point
+Updated discussion progress
+Updated template sentences:
+My first point is...
+One reason is that...
+This is important because...
+Updated next-step buttons:
+Add detail
+Give second point
+Ask for others’ opinions
+Move to conclusion
+
+Design notes:
+
+This should feel like the same interface in a later speaking stage
+Maintain visual consistency with the previous speaker screen
+8. End Summary Page
+
+A final screen shown after all group members finish speaking.
+
+Include:
+
+Title: Discussion Summary
+Section title: AI Summary
+Section title: Key Points Raised by Group Members
+Section title: Final Group Conclusion
+One main button labeled Finish
+
+Use realistic placeholder content related to a language classroom discussion topic.
+
+Example topic:
+Should AI tools be encouraged in language learning classrooms?
+
+Example summary content:
+
+AI tools can help students practice vocabulary and speaking
+Too much reliance on AI may reduce independent thinking
+Teachers should guide responsible use of AI tools
+
+Design notes:
+
+The final conclusion section should be the most visually emphasized
+Keep the structure clean and readable
+Use cards or section blocks to separate the three summary areas
+Layout and Design Rules
+
+Use these layout rules across the discussion-related pages:
+
+Header area
+
+Show:
+
+Student name
+Group code
+Current discussion topic
+Status area
+
+Show:
+
+Current speaker
+Next in queue
+Discussion progress
+Current group stage
+Action area
+
+Depends on the page:
+
+Listener page: Request to Speak + Quick Response
+Queued page: Requested status
+Turn page: Start Speaking
+Speaker page: sentence templates + next-step buttons
+End page: summary + Finish button
+UI Component Guidance
+
+Use:
+
+rounded cards
+modern input fields
+clear badges for stages like Opening, First Point, Queued, Speaking Now
+primary blue buttons
+lightweight status labels
+soft shadows or subtle borders
+simple icons if useful, such as speaker, queue, topic, summary
+
+Avoid:
+
+dark mode
+excessive gradients
+overly playful cartoon visuals
+cluttered layouts
+too many colors
+Interaction Flow
+
+Show this as a clickable prototype flow:
+
+Initial Page → Enter → Join Confirmation Page
+Join Confirmation Page → Enter Discussion Room → Listener Page
+Listener Page → Request to Speak → Queued Page
+Queued Page → Turn Notification Page
+Turn Notification Page → Start Speaking → Speaker Page
+Speaker Page → click Give first point → Speaker Page After Branch Selection
+After all speakers finish → End Summary Page
+Final Goal
+
+The prototype should look like a convincing high-fidelity educational web app concept that is suitable for:
+
+Week 8 poster presentation
+explaining the user flow
+showing the main discussion support features
+demonstrating the functional core logic of the system

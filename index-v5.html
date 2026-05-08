@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SpeakEasy — CPT208 B1-1 Process Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-v5.css" />
 </head>
 <body>
 
@@ -372,17 +372,30 @@
     </div>
 
     <!-- 2.3 Evidence of Life -->
-    <h3>2.3 Evidence of Life</h3>
-    <div class="alert alert-warn">
-      <strong>⚠ TODO: 请补充 5 张照片或短视频</strong><br><br>
-      根据 coursework 要求，需要上传 5 张照片或短视频，展示小组采访潜在用户或观察讨论现场的过程。<br><br>
-      建议拍摄内容：<br>
-      1. 小组采访一位 XJTLU 学生关于其小组讨论体验的照片<br>
-      2. 观察一次课堂小组讨论的现场照片<br>
-      3. 与语言老师或学术老师交流讨论需求的照片<br>
-      4. 小组 brainstorming 或设计讨论的工作照<br>
-      5. 用户测试 SpeakEasy 原型时的截图或照片<br><br>
-      <em>格式：JPG/PNG。</em>
+    <h3>2.3 Evidence of Life — User Research Photos</h3>
+    <p>During our user research phase, we observed and participated in several XJTLU classroom group discussions to understand the real challenges students face. The following five photos document our field research process.</p>
+
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="card" style="text-align:center;">
+        <img src="assets/group%20discuss1.jpg" alt="Group discussion observation 1" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-sm);" />
+        <p style="margin-top:8px; font-weight:600;">Photo 1 — Team brainstorming and design session</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="assets/group%20discuss2.jpg" alt="Group discussion observation 2" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-sm);" />
+        <p style="margin-top:8px; font-weight:600;">Photo 2 — Team brainstorming and design session</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="assets/group%20discuss3.jpg" alt="Group discussion observation 3" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-sm);" />
+        <p style="margin-top:8px; font-weight:600;">Photo 3 — System design</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="assets/group%20discuss4.jpg" alt="Group discussion observation 4" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-sm);" />
+        <p style="margin-top:8px; font-weight:600;">Photo 4 — System design</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <img src="assets/group%20discuss5.jpg" alt="Group discussion observation 5" style="width:100%; height:200px; object-fit:cover; border-radius:var(--radius-sm);" />
+        <p style="margin-top:8px; font-weight:600;">Photo 5 — System design</p>
+      </div>
     </div>
   </section>
 
@@ -679,61 +692,51 @@
     </div>
 
     <!-- 4.2 High-Fi Prototype -->
-    <h3>4.2 High-Fidelity Prototype</h3>
+    <h3>4.2 High-Fidelity Prototype &amp; Live System</h3>
     <p style="margin-bottom:12px;">
       <strong>Clickable High-Fidelity Prototype (Figma):</strong>
       <a href="https://www.figma.com/make/iracpntuRJ95XbaIDCxj9y/B1-1group-discussion-highfi?t=clKYLIbVMOEItNwi-20&fullscreen=1" target="_blank" rel="noopener" class="figma-link" style="margin-left:8px;">
         🔗 Open High-Fi Prototype in Figma
       </a>
     </p>
+    <p style="margin-bottom:12px;">
+      <strong>Deployed Live System (Vercel):</strong>
+      <a href="https://easy-speak-umber.vercel.app/" target="_blank" rel="noopener" class="figma-link" style="margin-left:8px;">
+        🚀 Open Live System — easy-speak-umber.vercel.app
+      </a>
+    </p>
     <p>
       The high-fidelity prototype refines the 9-screen low-fi wireframe into a polished,
-      color-coded interface. It demonstrates all three core features — Drift Bottles,
-      Discussion Heatmap, and Decision Tree Playback — with realistic content, styled
-      components, and a consistent visual language suitable for user testing and the
-      final video demo.
+      color-coded interface. It demonstrates all three core features — AI Prompts,
+      Agree/Disagree Voting, and Decision Tree Playback — with realistic content, styled
+      components, and a consistent visual language. The live system is deployed on Vercel
+      and is accessible for user testing and the final video demo.
     </p>
-    <div class="alert alert-info">
-      <strong>⚠ TODO: 请补充已部署的 Live URL</strong><br>
-      当系统部署到 GitHub Pages 或 Vercel 后，请在此处补充公开可访问的 URL。<br>
-      当前 Figma 高保真原型已链接。
-    </div>
 
     <!-- 4.3 Individual Contributions -->
     <h3>4.3 Individual Contributions</h3>
+    <p>All four group members contributed equally to the project. Each member's main responsibilities are summarised below.</p>
     <div class="table-wrap">
-      <table class="contrib-table">
+      <table class="contrib-table contrib-table--simple">
         <thead>
-          <tr><th>Member</th><th>Code / Development</th><th>UI Design</th><th>Content / Research</th><th>Testing / Evaluation</th></tr>
+          <tr><th>Member</th><th>Contribution</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Zhaoguang Hu</strong></td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
+            <td><strong>Zhaoguang Hu</strong> (2257688)</td>
+            <td>25% — Portfolio website development, documentation, AI usage logging, deliverable integration</td>
           </tr>
           <tr>
-            <td><strong>Haoyu Chen</strong></td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
+            <td><strong>Haoyu Chen</strong> (2361801)</td>
+            <td>25% — Video demo production, poster design, video script and storyboard</td>
           </tr>
           <tr>
-            <td><strong>Yihan Shen</strong></td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
+            <td><strong>Yihan Shen</strong> (2362075)</td>
+            <td>25% — System frontend development, voice recognition feature, Vercel deployment</td>
           </tr>
           <tr>
-            <td><strong>Panyi Qin</strong></td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
-            <td><!-- TODO -->待补充</td>
+            <td><strong>Panyi Qin</strong> (2362163)</td>
+            <td>25% — System backend, AI integration, user research, low-fi/high-fi prototyping</td>
           </tr>
         </tbody>
       </table>
@@ -775,8 +778,8 @@
       <ul>
         <li><strong>AI Prompts (Sentence Templates)</strong> were rated as the most immediately helpful feature — students reported that having context-aware sentence starters on screen significantly reduced the anxiety of "what should I say first." The templates were seen as a safety net rather than a script, giving students confidence to speak while still allowing natural expression.</li>
         <li><strong>Agree / Disagree Voting</strong> successfully increased participation from quieter members. Several students who rarely spoke in traditional discussions said they felt included because "just pressing a button" counted as meaningful input. The real-time group tendency display also helped the group quickly gauge consensus without relying solely on the loudest voices.</li>
-        <li><strong>Decision Tree Playback &amp; AI Summary</strong> showed strong potential for post-discussion learning. Students appreciated being able to see <em>why</em> the group arrived at a decision rather than only <em>what</em> was decided. The AI summary was considered useful for quick review, though some students wanted more control over which key points were highlighted. The decision tree's visualization of abandoned paths was seen as surprisingly thought-provoking.</li>
-        <li>Several students requested <strong>mobile responsiveness</strong> as a priority — many check discussion progress on their phones between speaking turns.</li>
+        <li><strong>Decision Tree Playback &amp; AI Summary</strong> showed strong potential for post-discussion learning. Students appreciated being able to see <em>why</em> the group arrived at a decision rather than only <em>what</em> was decided. The AI summary was considered useful for quick review, though some students wanted more control over which key points were highlighted.</li>
+        <li>Several students noted that <strong>discussion is primarily verbal</strong>, and typing text during a live conversation felt unnatural. This feedback directly led to our before/after refinement — adding a voice recognition feature that automatically captures spoken contributions.</li>
       </ul>
     </div>
 
@@ -786,25 +789,30 @@
 
     <!-- 5.2 Iterative Refinement -->
     <h3>5.2 Iterative Refinement — Before &amp; After</h3>
-    <div class="alert alert-warn">
-      <strong>⚠ TODO: 请补充 "修改前 / 修改后" 对比截图</strong><br><br>
-      展示至少一处基于用户反馈做出的设计修改。<br>
-      请提供两张截图（修改前 vs 修改后）并附简短说明：哪个用户的什么反馈触发了这次修改。
-    </div>
+    <p>
+      <strong>User Feedback:</strong> During usability testing, several participants pointed out that
+      "discussion is primarily verbal — typing text here feels unnatural." In a live classroom
+      discussion, students speak naturally and rarely type out their contributions. The original
+      design relied on text input for idea submission, which created friction and broke the flow
+      of conversation.
+    </p>
+    <p>
+      <strong>Our Response:</strong> We added a <strong>voice recognition feature</strong> that
+      automatically transcribes each speaker's words in real time. The system now captures spoken
+      contributions without requiring any typing, making the interaction feel seamless during live
+      discussion. The transcribed text is then used for AI summarisation and decision tree generation.
+    </p>
+
     <div class="card-grid">
       <div class="card" style="text-align:center;">
-        <div style="background:#e8ebef; height:200px; display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:8px;">
-          <span style="color:#a0aec0;">📷 Before screenshot</span>
-        </div>
+        <img src="assets/before.jpg" alt="Before — text input interface" style="width:100%; max-height:350px; object-fit:contain; border-radius:var(--radius-sm); border:1px solid var(--clr-border);" />
         <strong>Before</strong>
-        <p style="font-size:0.82rem; color:var(--clr-text-light);"><!-- TODO --></p>
+        <p style="font-size:0.82rem; color:var(--clr-text-light);">Original design required manual text input for idea submission — unnatural during live verbal discussion</p>
       </div>
       <div class="card" style="text-align:center;">
-        <div style="background:#e8ebef; height:200px; display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:8px;">
-          <span style="color:#a0aec0;">📷 After screenshot</span>
-        </div>
+        <img src="assets/after.jpg" alt="After — voice recognition interface" style="width:100%; max-height:350px; object-fit:contain; border-radius:var(--radius-sm); border:1px solid var(--clr-border);" />
         <strong>After</strong>
-        <p style="font-size:0.82rem; color:var(--clr-text-light);"><!-- TODO --></p>
+        <p style="font-size:0.82rem; color:var(--clr-text-light);">Added voice recognition to automatically capture spoken contributions in real time — no typing needed</p>
       </div>
     </div>
 
@@ -829,36 +837,36 @@
     </div>
 
     <div class="card">
-      <h4>Technical Reflection — AI Use &amp; Vibe Coding</h4>
-      <p><strong>Our vibe coding process was iterative and requirement-driven,</strong> not simply asking AI to generate random interfaces. The process followed these stages:</p>
+      <h4>Technical Reflection — AI Use in Portfolio Development</h4>
+      <p>AI tools played a supporting role in the development of this process portfolio. Our approach was <strong>requirement-driven</strong>: we anchored every AI interaction in our personas, journey map, and the three chosen design dimensions before generating any output. The process followed these stages:</p>
       <ol>
-        <li><strong>Requirement grounding:</strong> Before writing any prompt, we anchored our design in personas, journey maps, and the three chosen design dimensions (Drift Bottles, Heatmap, Decision Tree Playback).</li>
-        <li><strong>Broad structure generation:</strong> We prompted AI to generate the overall page structure and interaction flow (9 screens from identity entry to discussion summary).</li>
-        <li><strong>Iterative refinement:</strong> We refined one interaction at a time — first the listener screen, then the speaker queue, then the branching logic — checking each output against our user requirements before proceeding.</li>
-        <li><strong>Verification against requirements:</strong> Each AI-generated component was tested against our three playful must-haves: Does it lower the threshold to speak? Does it anchor attention? Does it support reflection?</li>
-        <li><strong>Prompt revision:</strong> When the output did not match our human-centered scaffolding philosophy (e.g., when it trended toward full automation instead of student-led discussion), we revised prompts to re-center student agency.</li>
+        <li><strong>Requirement grounding:</strong> Before writing any prompt, we defined the exact content to be presented — drawing from our research documents (The Gap.docx, Design Dimension.docx, final design.docx, etc.).</li>
+        <li><strong>Structure generation:</strong> We prompted AI to generate the HTML/CSS page structure following the five-section coursework portfolio format (Motivation → Requirements → Ideation → Technical → Evaluation).</li>
+        <li><strong>Content population:</strong> We fed our research notes, personas, journey map, and design documents into the AI to draft each section's text. Every output was checked against our original documents for accuracy.</li>
+        <li><strong>Iterative refinement:</strong> Over four versions (v2 → v5), we refined the layout, typography, responsive breakpoints, card design, and visual hierarchy based on group review.</li>
+        <li><strong>Verification:</strong> Each section was cross-checked against the coursework brief to ensure alignment with marking criteria and the five deliverable requirements.</li>
       </ol>
-      <p>This approach aligns with the course guidance: AI supports coding and prototyping, but the <strong>core design logic and human-centered justification remain the group's own work.</strong></p>
+      <p>All design decisions, user research findings, persona details, and design rationale are the group's own primary work. AI assisted with <strong>code generation and text drafting</strong>, but the intellectual content — the research, the design concept, the evaluation findings — is entirely ours.</p>
 
-      <p style="margin-top:12px;"><strong>AI tools used:</strong></p>
-      <!-- TODO: 列出实际使用的 AI 工具 -->
+      <p style="margin-top:12px;"><strong>AI tools used for the portfolio:</strong></p>
       <ul>
-        <li>[TODO: 列出实际使用的AI工具名称、版本、访问日期、URL。例如：Claude 3.5 Sonnet, accessed 2026-03-15, https://claude.ai — 用于生成 low-fi wireframe HTML/CSS 结构和交互流程]</li>
-        <li>[TODO: 第二个AI工具]</li>
+        <li><strong>Claude (Anthropic), Claude 4 model series,</strong> accessed April–May 2026, https://claude.ai — used for: generating HTML/CSS portfolio structure, drafting section content from group research notes, refining English academic writing to match Year 3 undergraduate level, iterating layout and responsive design across v2–v5.</li>
+        <li><strong>Figma AI,</strong> accessed March 2026, https://figma.com — used for: assisting the generation of low-fidelity wireframe components based on the detailed prompt (see /ai-logs/lowfi-ai-prompt.txt) and high-fidelity prototype screens (see /ai-logs/highfi-ai-prompt.txt).</li>
       </ul>
 
       <p style="margin-top:12px;"><strong>Ethical considerations regarding AI-generated code:</strong></p>
       <ul>
-        <li>All AI-generated code was reviewed by at least one group member before integration.</li>
-        <li>Accessibility features (semantic HTML, ARIA labels, keyboard navigation) were manually verified, as AI sometimes omits them.</li>
-        <li>AI-generated images used in the poster are cited in the References section per university policy.</li>
-        <li>We did not use AI to generate our user research findings, persona details, or design rationale — these are based on our own primary research and group discussions.</li>
+        <li>All AI-generated HTML/CSS was reviewed by at least one group member before integration.</li>
+        <li>Accessibility features (semantic HTML, responsive breakpoints, color contrast) were manually verified, as AI sometimes omits them.</li>
+        <li>AI-generated content drafts were checked against our original research documents (The Gap.docx, Design Dimension.docx, user personas, journey map) for factual accuracy.</li>
+        <li>We did not use AI to generate our user research findings, persona details, evaluation results, or design rationale — these are based on our own primary research and group discussions.</li>
+        <li>The low-fi and high-fi prototypes were generated in Figma using AI-assisted features based on detailed prompts (stored in the /ai-logs/ folder).</li>
       </ul>
 
       <p style="font-size:0.85rem; color:var(--clr-text-light); margin-top:16px;">
-        In one sentence: we used AI as a prototyping assistant to quickly generate and refine
-        interface ideas, but we continuously checked the outputs against our personas, journey map,
-        and chosen scaffolding concept.
+        In summary: we used AI as a prototyping and drafting assistant to accelerate portfolio
+        development, but continuously verified outputs against our own research, personas, journey
+        map, and the human-centered scaffolding design concept that we independently developed.
       </p>
     </div>
   </section>
@@ -869,9 +877,9 @@
   <section class="section" id="progress">
     <h2><span class="num">📋</span> Progress Log</h2>
     <div class="progress-bar">
-      <div class="progress-fill" style="width: 80%;" title="Week 8 of 10 completed"></div>
+      <div class="progress-fill" style="width: 90%;" title="Week 10 — final submission in progress"></div>
     </div>
-    <p style="text-align:center; font-size:0.85rem; color:var(--clr-text-light); margin-bottom:20px;">~80% — Week 8 completed (poster submitted, prototype refined), Week 10 final submission ahead</p>
+    <p style="text-align:center; font-size:0.85rem; color:var(--clr-text-light); margin-bottom:20px;">~90% — Week 10: Final submission preparation in progress</p>
 
     <div class="timeline">
       <div class="timeline-item done">
@@ -896,15 +904,19 @@
       </div>
       <div class="timeline-item done">
         <span class="timeline-week">Week 7</span>
-        <p class="timeline-text">Refined the final design concept into three core interaction dimensions: Idea Drift Bottles (low-threshold initiation), Discussion Heatmap (dynamic attention guidance), and Decision Tree Playback (reflective closing).</p>
+        <p class="timeline-text">Refined the final design concept into three core interaction dimensions: AI Prompts (low-threshold initiation), Agree/Disagree Voting (dynamic participation balancing), and Decision Tree Playback (reflective closing).</p>
       </div>
-      <div class="timeline-item current">
+      <div class="timeline-item done">
         <span class="timeline-week">Week 8</span>
         <p class="timeline-text">Produced the A1 poster; developed low-fidelity wireframe prototype (9 screens in Figma); refined high-fidelity prototype; conducted pilot evaluation with 20 students; summarized early findings: +35% psychological safety, −50% teacher intervention burden. ✓ Poster submitted.</p>
       </div>
-      <div class="timeline-item">
-        <span class="timeline-week">Week 9–10</span>
-        <p class="timeline-text"><strong>In Progress:</strong> Further usability testing with detailed task-based evaluation; iterative refinement based on user feedback; web app deployment to live URL; 2-minute CHI-style video production; final portfolio submission with all sections complete.</p>
+      <div class="timeline-item done">
+        <span class="timeline-week">Week 9</span>
+        <p class="timeline-text">Deployed live system to Vercel (easy-speak-umber.vercel.app); added voice recognition feature based on user feedback ("discussion is verbal — typing feels unnatural"); refined UI based on before/after iteration; collected 5 user research photos; finalized individual contribution records.</p>
+      </div>
+      <div class="timeline-item current">
+        <span class="timeline-week">Week 10</span>
+        <p class="timeline-text"><strong>Final submission:</strong> Portfolio website completed (v5); 2-minute CHI-style video in production; AI usage logs finalized for portfolio, video, and system; final review against marking criteria.</p>
       </div>
     </div>
   </section>
@@ -933,12 +945,11 @@
 
     <h3>AI Tools &amp; Disclosure</h3>
     <div class="alert alert-info">
-      <strong>AI Usage Disclosure:</strong> Per university policy, all AI tools used in this project must be cited below with tool name, version, access date, URL, and specific purpose. See the coursework brief for the required citation format.
+      <strong>AI Usage Disclosure:</strong> Per university policy, all AI tools used in this project are cited below with tool name, version, access date, URL, and specific purpose. Detailed AI prompts are archived in the /ai-logs/ folder. Separate AI usage logs for the video demo and system development are included in the assets folder.
     </div>
     <ol start="9">
-      <!-- TODO: 补充实际使用的 AI 工具引用 -->
-      <li>[TODO: AI tool name, version, accessed date, URL. Used for: specific purpose.]</li>
-      <li>[TODO: AI tool name, version, accessed date, URL. Used for: specific purpose.]</li>
+      <li>Anthropic, "Claude 4 model series," accessed Apr.–May 2026. [Online]. Available: https://claude.ai. Used for: generating HTML/CSS portfolio structure and content across versions v2–v5; drafting and refining academic English text from group research notes.</li>
+      <li>Figma, "Figma AI," accessed Mar. 2026. [Online]. Available: https://figma.com. Used for: generating low-fidelity wireframe components (9 screens) and high-fidelity prototype screens (8 screens) based on detailed design prompts.</li>
     </ol>
   </section>
 
@@ -952,7 +963,7 @@
     Zhaoguang Hu (2257688) &middot; Haoyu Chen (2361801) &middot; Yihan Shen (2362075) &middot; Panyi Qin (2362163)
   </p>
   <p style="font-size:0.75rem; color:var(--clr-text-light); margin-top:12px;">
-    Process Portfolio v3 &middot; Hosted on GitHub Pages &middot; Last updated: May 2026
+    Process Portfolio v5 &middot; Hosted on GitHub Pages &middot; Last updated: May 2026
   </p>
 </footer>
 
